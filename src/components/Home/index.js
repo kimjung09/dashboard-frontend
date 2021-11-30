@@ -111,7 +111,22 @@ const MainPage = (props) => {
                     </div>
                 </nav>
                 <div className="Body-container">
-                    Dashboard
+                    <div className="Dashboard">
+                       <div className="Bottom">
+                           <div className="Bar">
+                               DashBoard
+                           </div>
+                       </div>
+                        <div className="Content">
+                            <div className="Body">
+                               <div className="top">
+                                   <div className="bundle">
+
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
