@@ -1,5 +1,10 @@
 import React from "react";
 import "./Home.css"
+import {AiOutlineHome} from 'react-icons/ai'
+import {FaExchangeAlt} from 'react-icons/fa'
+import {RiWaterFlashLine} from 'react-icons/ri'
+import {BiBookHeart} from 'react-icons/bi'
+import {FiMoreHorizontal} from 'react-icons/fi'
 
 const MainPage = (props) => {
     return (
@@ -7,9 +12,12 @@ const MainPage = (props) => {
             <div className="Home-container">
                 <nav className="SideBar">
                     <div className="hidden">
-                        <div className="Brand ml-1">
-                           Zapper
+                        <div className="Brand">
+                            <div className="mid">
+                               <span>Zapper</span>
+                            </div>
                         </div>
+                        {/* connectd */}
                         <div className="account_connected">
                            <div className="account">
                               <div className="header">
@@ -17,13 +25,12 @@ const MainPage = (props) => {
                                        <div className="block">
                                            <div className="edit">
                                            </div>
-                                           <span className="connection"></span>
+                                           <span></span>
+                                           <canvas></canvas>
                                        </div>
                                        <div className="flex-max">
                                             <div className="flex">
-                                                 <span className="address">
-                                                     ether
-                                                 </span>
+                                                 <span>ether</span>
                                                 <div className="level">
                                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                          viewBox="0 0 512 512" className="icon " height="1.1em"
@@ -34,7 +41,6 @@ const MainPage = (props) => {
                                             </div>
                                        </div>
                                        <div className="gaming mt-1">
-                                           <div className="level">
                                                <span>
                                                    LV.1
                                                </span>
@@ -43,30 +49,63 @@ const MainPage = (props) => {
                                                    /
                                                    500
                                                </span>
-                                           </div>
                                        </div>
                                    </div>
                               </div>
                            </div>
                             <div className="mt-2 mb-3 sidebar__gamification">
-                                <a href="/quests" className="visible">
-                                    <button>Quests</button>
+                                <a href="/quests" >
+                                    <button>
+                                        <FaExchangeAlt className="alt" />
+                                        <span>Quests</span>
+                                    </button>
                                 </a>
-                                <a href="/quests" className="visible">
-                                    <button>Rewards</button>
+                                <a href="/quests">
+                                    <button>
+                                        <FaExchangeAlt className="alt" />
+                                        <span>Rewards
+                                        </span>
+                                    </button>
                                 </a>
                             </div>
+
                             <div className="menu">
                                 <a href="/">
-                                    DashBoard
+                                    <div className="icon">
+                                        <AiOutlineHome color={"white"} size={18}  />
+                                    </div>
+                                    <span>DashBoard</span>
                                 </a>
-                                <a href="/exchange">Exchange</a>
-                                <a href="/pool">Pool</a>
-                                <a href="/save">Save</a>
-                                <a href="/address">Address Book</a>
+                                <a href="/exchange">
+                                    <div className="icon">
+                                        <FaExchangeAlt color={"white"} size={18} />
+                                    </div>
+                                    <span>Exchange</span>
+                                </a>
+                                <a href="/pool">
+                                    <div className="icon">
+                                        <RiWaterFlashLine color={"white"} size={18}  />
+                                    </div>
+                                    <span>Pool</span>
+                                </a>
+                                <a href="/save">
+                                    <div className="icon">
+                                        <BiBookHeart color={"white"} size={18}  />
+                                    </div>
+                                    <span>Save</span>
+                                </a>
+                                <a href="/address">
+                                    <div className="icon">
+                                        <BiBookHeart color={"white"} size={18}  />
+                                    </div>
+                                    <span>Address Book</span>
+                                </a>
                                 <div className="more">
                                   <div>
                                       <div className="menu_item">
+                                          <div className="icon">
+                                              <FiMoreHorizontal color={"white"} size={18}  />
+                                          </div>
                                           <span>More</span>
                                       </div>
                                   </div>
@@ -117,11 +156,28 @@ const MainPage = (props) => {
                                DashBoard
                            </div>
                        </div>
-                        <div className="Content">
-                            <div className="Body">
+                        <div className="Account">
+                            <div className="header">
                                <div className="top">
                                    <div className="bundle">
+                                       <div className="bundle_item">
+                                            <div className="icon">
+                                                <div className="blockie">
 
+                                                </div>
+                                            </div>
+                                           <div className="label">ether</div>
+                                       </div>
+
+                                   </div>
+                                   <div className="dropdown">
+                                         <div className="bundle_item">
+                                             <div className="icon">
+                                                 <div className="wallet">
+                                                     <div className="block"> bundle</div>
+                                                 </div>
+                                             </div>
+                                         </div>
                                    </div>
                                </div>
                             </div>
