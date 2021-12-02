@@ -3,40 +3,59 @@
         flex-direction: row;
 
     }
+    .SideBar {
+        min-width: 240px;
+    }
+
+    .language {
+        flex-direction: row;
+        grid-gap: 0;
+        gap: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
 }
+
 
 .Home-container {
     width:100%;
     max-width: 1480px;
-    min-height: 100%;
+    min-height:100%;
     margin: 0 auto;
-    border:1px solid #ffffff;
     display:flex;
+    padding-bottom:32px;
+}
+
+.SideBar {
+    height: 100%;
+    width:240px;
+    display:flex;
+    flex-direction: column;
 }
 
 .hidden {
-   background:#141a1e;
     border-right: 1px solid #2c3a43;
     display:flex;
     flex-direction: column;
     height: 100%;
-    padding:16px;
+    padding: 16px;
     box-sizing: border-box;
-    z-index: 10;
+    z-index:10;
     position:fixed;
-    width:inherit;
     overflow-y: auto;
 }
 
 .Brand {
-    display:flex;
-    margin-bottom: 32px;
-    cursor: pointer;
+   display:flex;
     align-items: center;
+    cursor: pointer;
+    margin-bottom: 32px;
 }
 
 .Brand > .mid {
     margin-left: 12px;
+
 }
 
 .mid > span {
@@ -44,8 +63,9 @@
     font-weight:600;
 }
 
+
 .account_connected {
-    flex-display: column;
+    flex-direction: column;
     flex: 1 1;
 }
 
@@ -58,12 +78,23 @@
     background: #1a2227;
     color:#fff;
     border: 1px solid #2c3a43;
+    
+    display:flex;
+    align-items: center;
+    padding:0 12px;
+    transition: .3s;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+
+    height: 54px;
 }
 
 .header > .sidebar {
     display:flex;
     align-items: center;
     width:100%;
+
 }
 
 .sidebar > .block {
@@ -97,6 +128,7 @@
     display: flex;
     background-color: rgba(0,34,57,.25);
 
+
 }
 
 .block > span {
@@ -126,7 +158,7 @@
 }
 
 .flex > span {
-   font-size:12px;
+    font-size:16px;
     display:flex;
     flex: 1 1;
     align-items: center;
@@ -137,13 +169,39 @@
     align-items: center;
 }
 
+.exp {
+    width:129px;
+    height: 4px;
+}
+
+.exp > .xp {
+    background:#2c3a43;
+    height:4px;
+    position:relative;;
+    border-radius: 8px;
+    width:100%;
+
+    display:block;
+}
+
+.xp > span {
+    width:6%;
+    background: #784ffe;
+    height:4px;
+    border-radius: 8px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
 .gaming {
-   color:#c7d2da;
+    color:#c7d2da;
     font-size:10px;
     line-height: 1.4;
     font-weight: 400;
     justify-content: space-between;
     align-items: center;
+    display:flex;
 }
 
 .gaming > span {
@@ -208,9 +266,11 @@ a > button > .alt {
     border-radius: 8px;
     transition: 3s;
     margin-bottom: 8px;
+    cursor: pointer;
 }
-.menu > a:active {
+.menu > a > .active {
     color:#fff;
+    font-weight: bold;
 }
 
 .menu > a > .icon {
@@ -223,16 +283,658 @@ a > button > .alt {
 }
 
 .menu > a > span {
+
     margin-left: 8px;
+    color:#ffffff;
+
+}
+
+
+ .more {
+    cursor: pointer;
+    width:208px;
+     color:red;
+     float:left;
+}
+ .menu_item {
+    color:#ffffff;
+     margin-bottom: 8px;
+ }
+
+.menu-item > .icon {
+    display:flex;
+    float:left;
+    align-items: center;
+    justify-content: center;
+    height:30px;
+    width:30px;
+    border-radius: 100%;
+    margin-right: 20px;
+    margin-bottom: 8px;
+
+}
+
+.flex-max1 {
+    flex: 1 1;
+    display:flex;
+    min-height: 580px;
+}
+
+.bottom {
+    position: absolute;
+    bottom:0;
+}
+
+.dropdown {
+    position:relative;
+    cursor: default;
+    width:207px;
+    height:52px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.dropdown > .header {
+    border: 1px solid #2c3a43;
+    background-color: #1a2227;
+
+    height:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    transition: 3s;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropdown > .header > .flex {
+    display:flex;
+    flex: 1 1;
+    align-items: center;
+}
+
+.flex > .network_icon {
+    box-shadow: 0 0 0 2px #2c3a43;
+    width:30px;
+    border-radius: 100%;
+    user-select: none;
+    vertical-align: middle;
+}
+
+.flex > .network_label {
+    margin-left: 8px;
+}
+
+.flex > .hide {
+
+}
+
+.hide > .flex {
+    display:flex;
+    align-items: center;
+}
+
+.hide > .flex > svg {
+    margin-left: 4px;
+    transition: .3s;
+    color:#fff;
+    float:right;
+}
+
+.language {
+    padding-top: 12px;
+    float:left;
+}
+
+.language > .pop {
+
+}
+
+.pop > .popover-button-3 {
+    cursor: pointer
+}
+
+.popover-button-3 > .pop {
+    margin: 0;
+    height: 30px;
+    max-width:74px;
+    transition: .3s;
+    cursor: pointer;
+    border:1px solid rgba(44,58,67);
+}
+
+.themeSwitch {
+    width:64px;
+    height:34px;
+    border:1px solid #ffffff;
+    float:right;
+
+
+}
+.themeSwitch > .night {
+    position:relative;
+    display:inline-block;
+    text-align: left;
+    opacity: 1;
+    direction: ltr;
+    border-radius: 17px;
+    transition:opacity 0.25s ease 0s;
+    touch-action:none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    user-select: none;
+}
+
+.night > switch {
+
+}
+
+.DashBoard {
+    flex-direction: column;
+    flex: 1 1;
+    height: 1176px;
+    padding-bottom:32px;
+
+}
+
+.DashBoard > .Wrapper {
+    width:100%;
+    max-width: 890px;
+    border-bottom: 1px solid rgba(44,58,67);
+}
+
+.Wrapper > .Body {
+    padding-bottom: 16px;
+}
+
+.Body > .Container {
+}
+.Container > .title {
+    padding: 0px 32px;
+    margin:16px 0px;
+    overflow:hidden;
+    display:flex;
+    flex: 1 1;
+}
+
+.title > .grid {
+    display:grid;
+    grid-template-columns: min-content minmax(
+     100px,min-content
+    );
+}
+
+.grid > .text {
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    font-size:18px;
+    border:none;
+    font-weight:bold;
+}
+
+.DashBoard > .account {
+    width:100%;
+    max-width:890px;
+    padding-top:32px;
+    margin-bottom: 32px;
+
+}
+
+.account > .Body {
+    padding:0px 32px;
+}
+
+.Body > .top {
+    margin-bottom: 32px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.top > .bundle {
+    border:1px solid #2c3a43;
+    display:flex;
+    height:36px;
+    border-radius: 8px;
+}
+
+.bundle > .item {
+    background:#202a30;
+    border-radius: 8px 0 0 8px;
+    display:flex;
+    align-items: center;
+    transition: .3s;
+    position:relative;
+    cursor: pointer;
+    height: 36px;
+}
+.bundle > .account {
+    position:relative;
+    cursor: default;
+
+}
+
+.item > .icon {
+   display:flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.icon > .blockie {
+    width:20px;
+    height: 20px;
+    box-shadow: 0 0 0 2px #2c3a43;
+    border-radius: 100%;
+}
+
+.item > .label {
+   padding: 8px 12px;
+    font-size:14px;
+    font-weight: 500;
+}
+
+
+.worth {
+   width: fit-content;
+    border-radius: 8px;
+    margin-bottom: 28px;
+}
+
+
+
+.account > .right {
+    margin-right: 0;
+    border-radius: 0 8px 8px 0;
+    display:flex;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+    height: 36px;
+}
+
+.account > .right > .icon {
+    display:flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.account > .right > .flex  {
+    display:flex;
+    align-items: center;
+}
+
+.account > .right > .flex > .label {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.account > .right > .flex > button {
+    color:#fff;
+    background:#141a1e;
+    border: 1px solid #2c3a43;
+    margin-right: 8px;
+    width:28px;
+    height: 28px;
+    border-radius: 100%;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.worth {
+     padding: 0px 32px;
+    min-width: auto;
+    border-radius: 8px;
+    margin-bottom: 28px;
+}
+
+.worth > .title {
+    color: rgba(199,210,218);
+    align-items: center;
+    display:flex;
+}
+
+.worth > .doller {
+    margin-bottom: 8px;
+    display:flex;
+    font-size:30px;
+    font-weight:500;
+}
+
+.worth > .edit {
+    display:flex;
+    align-items: center;
+}
+
+.edit > .totalen {
+    transition:3s;
+    cursor: pointer;
+    border:1px solid #2c3a43;
+    border-radius: 8px;
+    padding:4px 16px;
+    margin-right: 8px;
+}
+
+.tabs {
+    display:flex;
+    padding: 0px 32px;
+    border-bottom:1px solid #2c3a43;
+    max-width: 890px;
+}
+
+.tabs > .item {
+    padding: 12px 16px;
+    color:#fff;
+    background:none;
+    border:none;
+
+    min-width:100px;
+    font-weight: 500;
+    transition: .3s;
+    cursor: pointer;
+    box-sizing:border-box;
+    border-radius: 0;
+}
+.tabs > .item:active {
+    color:#fff;
+    border-bottom:2px solid #fff;
+
+}
+
+.filter {
+    box-sizing: border-box;
+    margin:16px auto;
+    padding:0px 32px;
+}
+
+.filter > .container {
+    position:relative;
+    max-width: 826px;
+    padding: 16px 0px;
+    box-sizing:border-box;
+}
+.filter > .container > .box {
+    padding: 0px 16px;
+    position:relative;
+    margin-bottom: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    display:flex;
+}
+
+.box > .left {
+      align-items: center;
+    display: flex;
+
+}
+
+.box > .left > .control {
+    border:1px solid #2c3a43;
+    display:flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.box > .left > .control > .item {
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+    font-size:12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+}
+.box > .left > .control > .item:active {
+    background:#202a30;
+}
+
+.box > .left > .settings {
+   background:#1a2227;
+    border:1px solid #2c3a43;
+
+    height:32px;
+    border-radius: 8px;
+    display:flex;
+    align-items: center;
+    position: relative;
+    cursor: default;
+}
+.settings > .item {
+    padding:4px 8px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:12px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    display:flex;
+    align-items: center;
+
+}
+
+.settings > .item > .flex {
+    display:flex;
+    align-items: center;
+
+}
+.settings > .item > .flex > span {
+    font-size:14px;
+    font-weight:500;
+    margin-left: 8px;
+}
+
+.box > .network {
+    align-items: center;
+    display:flex;
+    cursor:pointer;
+    transition: .3s;
+    border:1px solid #000;
+    background: #202a30;
+
+}
+
+.box > .network > .box {
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight: 600;
+    align-items: center;
+    display:flex;
+    padding: 8px 12px;
+}
+
+.network > .box > .title {
+    display:block;
+    margin-left: 8px;
+}
+
+.footer {
+    width:100%;
+    max-width:890px;
+    padding-bottom:32px;
+    flex: 1 1;
+    position:absolute;
+    bottom:0;
+
+}
+
+.footer > .container {
+    color:#c7d2da;
+    border-top: 1px solid #2c3a43;
+    padding: 30px 0px;
+}
+
+.footer > .container > .body {
+    display:flex;
+    align-items: center;
+    padding: 0px 32px;
+    justify-content: space-between;
+    margin: 0 auto;
+    box-sizing:border-box;
+    color:#ffffff;
+}
+
+.footer > .container > .body > .link {
+    display:flex;
+    font-size:14px;
+    margin-bottom: 8px;
+    color:#ffffff;
+
+}
+
+.footer > .container > .body > .flex {
+      display:flex;
+    align-items: center;
+}
+
+.footer > .container > .body > .flex > a {
+    margin-right: 16px;
     color:#ffffff;
 }
 
 
-.menu > .more {
-    cursor: pointer;
-    display:block;
+.Widgets {
+    position:fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    width:350px;
+    flex-direction: column;
+    left: calc(50% + 390px);
+    overflow:hidden auto;
+    border:1px solid red;
+
 }
 
-.flex-ma {
-    flex: 1 1;
+.Widgets > .Container {
+    padding-top: 12px;
+    padding-bottom:16px;
 }
+
+.Widgets > .Container > .Body {
+     padding: 0px 16px;
+
+}
+
+.Widgets > .Container > .Body > .Bottom {
+   width:100%;
+    flex-direction: column;
+    display:flex;
+}
+
+.Widgets > .Container > .Body > .Bottom >  .Box {
+    padding-bottom: 16px;
+
+}
+
+.Widgets > .Container > .Body > .Bottom > .Box > .Search {
+    position:relative;
+    flex: 1 1;
+    max-width: 400px;
+    min-height: 40px;
+    background: #202a30;
+}
+
+.Search > .icon {
+    color:#c7d2da;
+    left:0;
+    margin-left: 12px;
+    position: absolute;
+    top: 8px;
+    z-index: 1;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Toggle {
+    padding-top: 4px;
+}
+
+.Bottom > .Box > .Toggle > .Title {
+   justify-content: space-between;
+    align-items: center;
+    display:flex;
+    font-size:14px;
+    font-weight:500;
+    float:left;
+}
+.Bottom > .Box > .Toggle > .Setting {
+    cursor: pointer;
+    transition: 3s;
+    padding: 8px 12px;
+    border:1px solid #000000;
+    float:right;
+}
+
+.Bottom > .Network {
+    padding-bottom:16px;
+}
+
+.Network > .form {
+   box-sizing:border-box;
+    transition: .3s;
+    border:8px solid #000000;
+    padding: 12px 12px;
+
+}
+
+.Network > .form > .group {
+
+}
+
+
+.Bottom > .Box > .Token  {
+    padding-bottom:16px;
+
+}
+
+.Token > .List {
+    border:1px solid #000000;
+    border-radous: 8px;
+    padding: 12px 12px;
+    box-sizing: border-box;
+}
+
+.Token > .List > .Title {
+    flex-direction: column;
+    display:flex;
+}
+
+.Token > .List > .Title > .form {
+   padding-bottom: 12px;
+}
+
+.Token > .List > .Title > .form > .title {
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+}
+
+.Token > .List > .Page {
+    align-items: center;
+    display:flex;
+
+}
+
+.Page > button {
+    cursor: not-allowed;
+    background-color:transparent;
+    color:#ffffff;
+    border:none;
+}
+.Page > .nation {
+    padding: 0px 4px;
+}
+
+.Page > .nation > span {
+    font-size: 14px;
+}
+
