@@ -130,6 +130,6 @@ const ExChange = () => {
             </div>
         </>
     )
-}
+};
 
 export default ExChange

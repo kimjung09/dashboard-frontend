@@ -22,12 +22,10 @@ const MainPage = () => {
             <div className="Home-container">
                 {SideList.map((item) => (
                     <nav className="SideBar">
-                        <div className="hidden">
                             <div className="Brand">
                                 <div className="mid">
                                     <span>{item.title}</span>
                                 </div>
-                            </div>
                             <div className="account_connected">
                                 <div className="account">
                                     <div className="header">
@@ -76,6 +74,9 @@ const MainPage = () => {
                                         <button>
                                             <FaExchangeAlt className="alt" />
                                             <span>Quests</span>
+                                            <div className="notification">
+
+                                            </div>
                                         </button>
                                     </NavLink>
                                     <NavLink to="/quests">
@@ -185,10 +186,8 @@ const MainPage = () => {
                     </nav>
                 ))}
                 <div className="DashBoard">
-                   <Routes>
-                       <Route exact path="/" element={<ExChange/>} />
-                       <Route exact path="/exchange" element={<ExChange/>} />
-                   </Routes>
+
+                   <ExChange />
                 </div>
                 {/*<DashBoard />*/}
                 <div className="Widgets">
@@ -254,7 +253,13 @@ const MainPage = () => {
     )
 }
 
-
+function About() {
+    return (
+        <div>
+            <h1>sdsdsds</h1>
+        </div>
+    );
+}
 
 
 
