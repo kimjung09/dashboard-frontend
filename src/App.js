@@ -12,8 +12,7 @@ function App () {
   return (
        <>
             <Routes>
-                <Route exact path="/" element={<DashBoard/>}>
-                </Route>
+                <Route exact path="/" element={<DashBoard/>}/>
                 <Route path="/exchange" element={<DashBoard/>} />
                 <Route exact path="/nft" element={<DashBoard/>}/>
                 <Route exact path="/Ges" element={<DashBoard/>} />
@@ -23,9 +22,11 @@ function App () {
                 <Route exact path="/save" element={<DashBoard/>}/>
                 <Route exact path="/address" element={<DashBoard/>}/>
                 <Route exact path="/quests" element={<DashBoard/>}/>
+                <Route exact path="/settings" element={<DashBoard/>}/>
                 <Route exact path="/quests" element={<DashBoard/>}/>
-
             </Routes>
+
+
        </>
   );
 }

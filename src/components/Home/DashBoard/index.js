@@ -40,7 +40,6 @@ const DashBoard = (match) => {
                                     <span>{item.title}</span>
                                 </div>
                             </div>
-
                             {/* Account_conneted 연결 */}
                             <div className="account_connected">
                                 <div className="account">
@@ -169,7 +168,7 @@ const DashBoard = (match) => {
                                     </div>
                                 </div>
                                 <div className="flex-max1"></div>
-
+                                <div className="footer">
                                 <a className="settings" href="/settings">
                                     <div className="icon">
                                         <div className="flex">
@@ -227,16 +226,117 @@ const DashBoard = (match) => {
                                         </div>
                                     </div>
                                 </div>
+                                </div>
                             </div>
                         </div>
                     </nav>
+
                 ))}
+                <div className="Center">
+                    <div className="first">
+                       <div className="Container">
+                         <div className="header">
+                            <div className="top">
+                              <h1>Exchange</h1>
+                                <p>
+                                    Verwissel in meer dan 2000 tokens met de beste aanhalingstekens uit meer dan 20 bronnen.
+                                </p>
+                            </div>
+                             <div className="address">
+                                 <a
+                                    href="https://learn.zapper.fi/articles/what-is-a-decentralized-exchange"
+                                    rel="noopener noreferrer" target="_blank">Meer informatie</a>
+                             </div>
+                         </div>
+                       </div>
+                    </div>
+                    <div className="second">
+                        <div className="Container">
+                                 <div className="card">
+                                    <div className="section">
+                                        <div className="from">
+                                           <div className="text">
+                                               <div className="row">
+                                                  <h1>Van</h1>
+                                                   <div className="hover">
+                                                       Saldo : 0
+                                                   </div>
+                                               </div>
+                                               <div className="row">
+                                                   <div className="token">
+                                                       <img src="/images/other/default-icon.png"/>
+                                                        <div className="invest">
+                                                            <div className="title">
+                                                                ETH
+                                                            </div>
+                                                            <div className="button">
+                                                                <svg stroke="currentColor" fill="currentColor"
+                                                                     stroke-width="0" viewBox="0 0 512 512"
+                                                                     className="icon " height="1.1em" width="1.1em"
+                                                                     xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M128 192l128 128 128-128z"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                                   <div className="input">
+                                                       <input step="any" class="input" placeholder="0" value="0" />
+                                                    <div className="support">
+                                                        ₩0.00
+                                                    </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                            <div className="middle">
+                                                <div className="row">
+                                                    <div className="center">
+                                                       <button className="exchange">
+                                                          <div className="flex">
+                                                              <svg stroke="currentColor" fill="currentColor"
+                                                                   stroke-width="0" viewBox="0 0 24 24"
+                                                                   className="icon " height="1.5em" width="1.5em"
+                                                                   xmlns="http://www.w3.org/2000/svg">
+                                                                  <path
+                                                                      d="M16 17.01V10h-2v7.01h-3L15 21l4-3.99h-3zM9 3L5 6.99h3V14h2V6.99h3L9 3z"></path>
+                                                              </svg>
+                                                          </div>
+                                                       </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="invest">
+                                               <div className="row1">
+                                                  <h2>tot</h2>
+                                               </div>
+                                                <div className="row2">
+                                                   <div className="container">
+
+                                                   </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="Widgets">
                     {SideList.map((item) => (
                         <div className="Container">
                             <div className="Body">
                                     <div className="Box">
-
+                                      <div className="Search">
+                                          <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                               viewBox="0 0 512 512" className="icon" height="1.5em" width="1.5em"
+                                               xmlns="http://www.w3.org/2000/svg">
+                                              <path
+                                                  d="M337.509 305.372h-17.501l-6.571-5.486c20.791-25.232 33.922-57.054 33.922-93.257C347.358 127.632 283.896 64 205.135 64 127.452 64 64 127.632 64 206.629s63.452 142.628 142.225 142.628c35.011 0 67.831-13.167 92.991-34.008l6.561 5.487v17.551L415.18 448 448 415.086 337.509 305.372zm-131.284 0c-54.702 0-98.463-43.887-98.463-98.743 0-54.858 43.761-98.742 98.463-98.742 54.7 0 98.462 43.884 98.462 98.742 0 54.856-43.762 98.743-98.462 98.743z"></path>
+                                          </svg>
+                                          <div className="container">
+                                              <div className="text">
+                                              </div>
+                                          </div>
+                                      </div>
                                     </div>
                                     <div className="Box">
                                         <div className="Toggle">
@@ -252,31 +352,57 @@ const DashBoard = (match) => {
                                         <div className="Token">
                                             <div className="List">
                                                 <div className="Title">
-                                                    <div className="form">
-                                                        <div className="title">
                                                             <h4>{item.Token}</h4>
-                                                        </div>
-                                                    </div>
+                                                            <div className="Page">
+                                                                <button>
+                                                                    <div className="aria">
+                                                                    <AiOutlineArrowLeft size={12} />
+                                                                    </div>
+                                                                </button>
+                                                                <div className="nation">
+                                                                    <span>1/1</span>
+                                                                </div>
+                                                                <button>
+                                                                    <div className="aria">
+                                                                    <AiOutlineArrowRight size={12} />
+                                                                    </div>
+                                                                </button>
+                                                            </div>
                                                 </div>
-                                                <div className="Page">
-                                                    <button>
-                                                        <AiOutlineArrowLeft size={12} />
-                                                    </button>
-                                                    <div className="nation">
-                                                        <span>1/1</span>
-                                                    </div>
-                                                    <button>
-                                                        <AiOutlineArrowRight size={12} />
-                                                    </button>
+
+                                            </div>
+                                            <div className="Container">
+                                                <div className="Box">
+                                                    <a href="https://zapper.fi/nl/token/ethereum/0x6b175474e89094c44da98b954eedeac495271d0f">
+                                                        <div className="url">
+                                                            <div className="title">
+                                                                <img src="https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x6b175474e89094c44da98b954eedeac495271d0f.png"/>
+                                                                <div className="description">
+                                                                    <span>DAI</span>
+                                                                    <span>Ethereum</span>
+                                                                </div>
+                                                            </div>
+                                                            <div className="doller">
+                                                               <span className="line">₩1,171.53</span>
+                                                                <div className="rate">
+                                                                    <span className="percent">
+                                                                        -0.49%
+                                                                    </span>
+                                                                  <span className="title">&nbsp; (24h)</span>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="Network">
-                                        <div className="form">
+                                    <div className="Box">
+                                        <div className="Network">
                                             <div className="group">
                                                 <div className="title">
-                                                    <h4>Network Fee &nbsp;</h4>
+                                                    <h4>Netwerk vergoeding &nbsp;</h4>
                                                 </div>
                                                 <div className="fee">
                                                     <div className="container">
@@ -284,7 +410,7 @@ const DashBoard = (match) => {
                                                             <span className="title">Standard</span>
                                                             <span className="min">~3min</span>
                                                         </div>
-                                                        <div className="end">
+                                                        <div className="flex">
                                                             <span className="title">112</span>
                                                             <div className="description">
                                                                 ₩32,545.14
@@ -297,7 +423,7 @@ const DashBoard = (match) => {
                                                             <span className="title">Standard</span>
                                                             <span className="min">~3min</span>
                                                         </div>
-                                                        <div className="end">
+                                                        <div className="flex">
                                                             <span className="title">112</span>
                                                             <div className="description">
                                                                 ₩32,545.14
@@ -308,15 +434,25 @@ const DashBoard = (match) => {
                                                 </div>
                                             </div>
                                             <div className="trend">
-                                                <h4>Gas Trend (1w)</h4>
+                                                <div className="title">
+                                                    <h4>Gas Trend(1w)</h4>
+                                                </div>
+                                                <div className="graph">
+                                                  <div className="container">
+                                                     <div className="title">
+                                                        <div className="gawi">
+                                                        </div>
+                                                     </div>
+                                                  </div>
+                                                </div>
                                             </div>
 
                                         </div>
 
                                     </div>
-                                    <div className="Learn">
-                                        <div className="container">
-                                            <div className="row">
+                                    <div className="Box">
+                                        <div className="Learn">
+                                            <div className="title">
                                                 <h4>Zapper Learn - Recent articles</h4>
                                             </div>
                                             <div className="site">
@@ -326,11 +462,10 @@ const DashBoard = (match) => {
                                                             <div className="icon">
                                                                 🤝
                                                             </div>
-                                                            <div className="sub">
-                                                                A Primer on DAOs
+                                                            <div className="description">
+                                                                <div className="title">Understanding Networks</div>
+                                                                <div className="read">5 min. read</div>
                                                             </div>
-                                                            <div className="read">5 min. read</div>
-
                                                         </div>
                                                     </a>
                                                 </div>
@@ -340,11 +475,10 @@ const DashBoard = (match) => {
                                                             <div className="icon">
                                                                 🪙
                                                             </div>
-                                                            <div className="sub">
-                                                                Breaking Down the Steps of Token Approval
+                                                            <div className="description">
+                                                                <div className="title">A Primer on DAOs</div>
+                                                                <div className="read">5 min. read</div>
                                                             </div>
-                                                            <div className="read">5 min. read</div>
-
                                                         </div>
                                                     </a>
                                                 </div>
@@ -354,18 +488,18 @@ const DashBoard = (match) => {
                                                             <div className="icon">
                                                                 🏦
                                                             </div>
-                                                            <div className="sub">
-                                                                What is a Vault?
+                                                            <div className="description">
+                                                                <div className="title">Understanding Networks</div>
+                                                                <div className="read">5 min. read</div>
                                                             </div>
-                                                            <div className="read">5 min. read</div>
                                                         </div>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="Trend">
-                                        <div className="form">
+                                    <div className="Box">
+                                        <div className="Trend">
                                             <div className="pagenation">
                                                 <h4>
                                                     🔥 Pool trend by volume (24h)
@@ -382,161 +516,33 @@ const DashBoard = (match) => {
                                                     </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="item">
-                                            <div className="container">
-                                                <div className="row">
-                                                    <div className="border">
-                                                        <div className="item">
-                                                            <div className="left">
-                                                                <img
-                                                                    src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
-                                                                    className="mr-3">
-                                                                </img>
-                                                                <div className="right">
-                                                         <span className="title">
-                                                         UNI-V2 PYR / ETH
-                                                         </span>
+                                            <div className="item">
+                                                    <div className="container">
+                                                                <div className="row">
+                                                                    <div className="left">
+                                                                        <img
+                                                                            src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
+                                                                        >
+                                                                        </img>
+                                                                        <div className="box">
+                                                                         <span className="title">UNI-V2 PYR / ETH</span>
+                                                                            <span className="description">Uniswap</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="right">
                                                                     <span>
-                                                               Uniswap
-                                                           </span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="percent">
-                                                         <span>
-                                                             +2.2%
-                                                         </span>
-                                                                <div className="won">
-                                                                    +
-                                                                    ₩211,401,716.14
-                                                                </div>
-                                                            </div>
+                                                                        +2.2%
+                                                                     </span>
+                                                                        <div className="won">
+                                                                            +
+                                                                            ₩211,401,716.14
+                                                                        </div>
+                                                                    </div>
 
-                                                        </div>
+                                                                </div>
                                                     </div>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="border">
-                                                        <div className="item">
-                                                            <div className="left">
-                                                                <img
-                                                                    src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
-                                                                    className="mr-3">
-                                                                </img>
-                                                                <div className="right">
-                                                         <span className="title">
-                                                         UNI-V2 PYR / ETH
-                                                         </span>
-                                                                    <span>
-                                                               Uniswap
-                                                           </span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="percent">
-                                                         <span>
-                                                             +2.2%
-                                                         </span>
-                                                                <div className="won">
-                                                                    +
-                                                                    ₩211,401,716.14
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="border">
-                                                        <div className="item">
-                                                            <div className="left">
-                                                                <img
-                                                                    src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
-                                                                    className="mr-3">
-                                                                </img>
-                                                                <div className="right">
-                                                         <span className="title">
-                                                         UNI-V2 PYR / ETH
-                                                         </span>
-                                                                    <span>
-                                                               Uniswap
-                                                           </span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="percent">
-                                                         <span>
-                                                             +2.2%
-                                                         </span>
-                                                                <div className="won">
-                                                                    +
-                                                                    ₩211,401,716.14
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="border">
-                                                        <div className="item">
-                                                            <div className="left">
-                                                                <img
-                                                                    src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
-                                                                    className="mr-3">
-                                                                </img>
-                                                                <div className="right">
-                                                         <span className="title">
-                                                         UNI-V2 PYR / ETH
-                                                         </span>
-                                                                    <span>
-                                                               Uniswap
-                                                           </span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="percent">
-                                                         <span>
-                                                             +2.2%
-                                                         </span>
-                                                                <div className="won">
-                                                                    +
-                                                                    ₩211,401,716.14
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="border">
-                                                        <div className="item">
-                                                            <div className="left">
-                                                                <img
-                                                                    src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
-                                                                    className="mr-3">
-                                                                </img>
-                                                                <div className="right">
-                                                         <span className="title">
-                                                         UNI-V2 PYR / ETH
-                                                         </span>
-                                                                    <span>
-                                                               Uniswap
-                                                           </span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="percent">
-                                                         <span>
-                                                             +2.2%
-                                                         </span>
-                                                                <div className="won">
-                                                                    +
-                                                                    ₩211,401,716.14
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
-                                        </div>
+                                            </div>
                                     </div>
                                 </div>
                         </div>
