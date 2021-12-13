@@ -185,10 +185,7 @@ const MainPage = () => {
                         </div>
                     </nav>
                 ))}
-                <div className="DashBoard">
 
-                   <ExChange />
-                </div>
                 {/*<DashBoard />*/}
                 <div className="Widgets">
                     <div className="Container">

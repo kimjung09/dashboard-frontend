@@ -11,11 +11,9 @@ import {FiMoreHorizontal, FiSettings} from 'react-icons/fi'
 const Portfolio = () => {
     return (
         <>
-            <div>
 
             {SideList.map((item) => (
                 <>
-
                     <div className="filter">
                         <div className="container">
                             <div className="box">
@@ -53,7 +51,6 @@ const Portfolio = () => {
                     <Footer />
                 </>
             ))}
-            </div>
         </>
     )
 }

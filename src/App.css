@@ -10,6 +10,7 @@ html {
   overflow-x: hidden;
   overflow-y: hidden;
   -ms-overflow-style: none;
+  height:100%;
 
 }
 
@@ -131,20 +132,19 @@ html {
 }
 
 
-
+head {
+  display:none;
+}
 
 
 body {
   /*overflow-x: hidden;*/
   /*overflow-y: hidden;*/
-  margin:0;
-  font-family: Avenir Next,Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  height: 100%;
-  line-height: 1.3975;
   background: #141a1e;
   color:#fff;
-  display:block;
+  margin:0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,h2,h3,h4,a {

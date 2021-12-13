@@ -19,7 +19,6 @@ const ExChange = () => {
     }
     return (
         <div className="Home-container">
-            <SideBar/>
             {SideList.map((item) => (
                 <div className="Address">
                      <div className="container">

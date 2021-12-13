@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig host="3.140.245.169" id="09b3ba2e-30a4-4c71-8de0-7d2b4c8c616e" keyPath="C:\Users\wjdgh0727\Downloads\kjh-test.pem" port="22" nameFormat="DESCRIPTIVE" username="ec2-user" />
+      <sshConfig host="3.137.140.237" id="09b3ba2e-30a4-4c71-8de0-7d2b4c8c616e" keyPath="C:\Users\wjdgh0727\Downloads\kjh-test.pem" port="22" nameFormat="DESCRIPTIVE" username="ec2-user" />
     </configs>
   </component>
 </project>
