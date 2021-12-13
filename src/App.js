@@ -31,13 +31,7 @@ function App () {
                                <div className="dropdown">
                                    <div className="header">
                                        <div className="account">
-                                           <div className="blockie">
-                                               <div className="edit">
-
-                                               </div>
-                                               <span></span>
-                                               <canvas></canvas>
-                                           </div>
+                                        
                                            <div className="flex-max">
                                                <div className="flex">
                                                    <span>ether</span>
@@ -64,7 +58,7 @@ function App () {
 
                                </div>
                                <div className="sidebar">
-                                   <NavLink to="/" className="sidebar__menu__item sidebar__menu__item--active" href="/nl/dashboard">
+                                   <NavLink to="/" className="menu" href="/nl/dashboard">
                                        <div className="icon">
                                            <div className="flex">
                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -77,7 +71,7 @@ function App () {
                                        </div>
                                        <span className="sidebar__menu__item__label sidebar-mid--hide">Dashboard</span>
                                    </NavLink>
-                                   <NavLink to="/exchange" className="sidebar__menu__item" href="/nl/exchange">
+                                   <NavLink to="/exchange" className="menu" href="/nl/exchange">
                                        <div className="icon">
                                            <div className="flex">
                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -90,7 +84,7 @@ function App () {
                                        </div>
                                        <span>Wisselen</span>
                                    </NavLink>
-                                   <NavLink to="/pool" className="sidebar__menu__item" href="/nl/invest">
+                                   <NavLink to="/pool" className="menu" href="/nl/invest">
                                        <div className="icon">
                                            <div className="flex">
                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -105,7 +99,7 @@ function App () {
                                            </div>
                                        </div>
                                        <span>Pool</span></NavLink>
-                                   <NavLink to="/save" className="sidebar__menu__item" href="/nl/save">
+                                   <NavLink to="/save" className="menu" href="/nl/save">
                                        <div className="icon">
                                            <div className="flex">
                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -117,7 +111,7 @@ function App () {
                                            </div>
                                        </div>
                                        <span>Sparen</span></NavLink>
-                                   <NavLink to="/address" className="sidebar__menu__item" href="/nl/watchlist">
+                                   <NavLink to="/address" className="menu" href="/nl/watchlist">
                                        <div className="icon">
                                            <div className="flex">
                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -164,6 +158,9 @@ function App () {
                                            </div>
                                        </div>
                                    </div>
+                               </div>
+                               <div className="language">
+                                   
                                </div>
                            </div>
                        </div>
