@@ -8,7 +8,7 @@
     "Level": "LV.1",
     "Quests": "Quests",
     "Rewards": "Rewards",
-    "DashBoard": "DashBoard",
+    "DashBoard": "Dashboard",
     "ExChange": "ExChange",
     "Pool": "Pool",
     "Save": "Save",
@@ -38,7 +38,6 @@
     "Discord": "DisCord",
     "WeChat": "WeChat",
     "SubTitle": "Swap into more than 2000 tokens, using the best quotes from over 20 sources.",
-    "More": "Learn More",
-    "Pool": "Liquidity Pools"
+    "More": "Learn More"
   }
 ]

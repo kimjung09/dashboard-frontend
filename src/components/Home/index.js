@@ -22,10 +22,10 @@ const MainPage = () => {
             <div className="Home-container">
                 {SideList.map((item) => (
                     <nav className="SideBar">
-                            <div className="Brand">
-                                <div className="mid">
-                                    <span>{item.title}</span>
-                                </div>
+                        <div className="Brand">
+                            <div className="mid">
+                                <span>{item.title}</span>
+                            </div>
                             <div className="account_connected">
                                 <div className="account">
                                     <div className="header">
@@ -185,7 +185,6 @@ const MainPage = () => {
                         </div>
                     </nav>
                 ))}
-
                 {/*<DashBoard />*/}
                 <div className="Widgets">
                     <div className="Container">
@@ -250,13 +249,7 @@ const MainPage = () => {
     )
 }
 
-function About() {
-    return (
-        <div>
-            <h1>sdsdsds</h1>
-        </div>
-    );
-}
+
 
 
 
