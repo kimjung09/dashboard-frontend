@@ -890,3 +890,266 @@
 
 @media screen and (max-width: 600px) {
 }
+.Home-container {
+    width:100%;
+    max-width: 1480px;
+    min-height: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display:flex;
+}
+
+.Home-container > .sidebar {
+    height: 100%;
+    width:240px;
+    display:block;
+}
+.Home-container > .sidebar > .hidden {
+    background:#141a1e;
+    border-right: 1px solid #2c3a43;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 10;
+    position: fixed;
+    width: inherit;
+    overflow-y: auto;
+}
+.Home-container > .sidebar > .hidden > .brand {
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 32px;
+
+}
+.Home-container > .sidebar > .hidden > .brand > .mid {
+    margin-left: 12px;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted {
+    display:flex;
+    flex: 1 1;
+    flex-direction: column;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted > .dropdown {
+    position: relative;
+    cursor: default;
+    
+}
+
+.Home-container > .sidebar > .hidden > .account_connted  > .sidebar {
+    margin-top:16px;
+    color:#fff;
+}
+.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu {
+    color:#fff;
+    display:flex;
+    padding: 4px 0;
+    align-items: center;
+    border-radius: 8px;
+    transition: .3s;
+    margin-bottom: 8px;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu > .icon {
+    display:flex;
+    justify-content:  center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu > .icon > .flex {
+    display:flex;
+    align-items: center;
+}
+.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu > span {
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted  > .flex-max {
+    display:flex;
+    flex: 1 1;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted > .side_menu {
+    display:flex;
+    color:#c7d2da;
+    padding: 4px 0;
+    align-items: center;
+    border-radius: 8px;   
+}
+.Home-container > .sidebar > .hidden > .account_connted > .side_menu > .icon {
+    display:flex;
+    align-items: center;
+    width:30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.Home-container > .sidebar > .hidden > .account_connted > .side_menu > span {
+    margin-left: 8px; 
+}
+
+.Home-container > .sidebar > .hidden > .account_connted > .network {
+    position:relative;
+    cursor:default;
+}
+.Home-container > .sidebar > .hidden > .account_connted > .network > .header {
+    border:1px solid #2c3a43;
+    background-color: #1a2227;
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor:pointer;
+    user-select: none;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max {
+    display:flex;
+    align-items: center;
+    flex: 1 1;
+}
+.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max > .icon {
+    width:30px;
+    box-shadow: 0 0 0 2px #2c3a43;
+    border-radius: 0;
+    user-select: none;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max > .label {
+    margin-left:8px;
+    flex: 1 1;
+}
+.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max > .hide {
+
+}
+
+.Home-container > .portfolio {
+      display:flex;
+      flex-direction: column;
+       flex: 1 1;
+}
+
+.Home-container > .portfolio > .container {
+   border-right:1px solid #2c3a43;
+   display: flex;
+   flex-direction: column;
+   flex: 1 1;
+}
+.Home-container > .portfolio > .container > .body {
+    width: 100%;
+    padding-bottom: 32px;
+    flex: 1 1;
+    border-bottom: 1px solid #2c3a43;
+    max-width:1200px;
+    justify-content: space-between;
+    align-items:center;
+    display:flex
+}
+.Home-container > .portfolio > .container > .body > .Dashboard {
+    border-bottom: 1px solid #2c3a43;
+    line-height: 1.35;
+}
+.Home-container > .portfolio > .container > .account {
+    border-bottom: 1px solid #2c3a43;
+    padding-top: 32px;
+    line-height: 1.35;
+}
+.Home-container > .portfolio > .container > .account > .top {
+    display:flex;
+    margin-bottom:32px;
+    justify-content: space-between;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle {
+    border:1px solid #2c3a43;
+    display:flex;
+    border-radius: 8px;
+    height: 36px;
+    
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item {
+    background:#202a30;
+    border-radius: 8px 0 0 8px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    cursor:pointer;
+    height:36px;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item > .icon {
+    display:flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item > .icon > .blockie {
+    width:20px;
+    height: 20px;
+    position:relative;
+    box-shadow: 0 0 0 2px #2c3a43;
+    border-radius: 100%;
+    background-size:cover;
+    background-position: 50%;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item  > h1 {
+    padding: 8px 12px;
+    font-size:14px;
+    font-weight: 500;
+}
+
+.Home-container > .portfolio > .container > .account > .top > .bundle > .account {
+    position:relative;
+    cursor:default;
+}
+
+.Home-container > .portfolio > .container > .account > .top > .bundle > .account > .item {
+    margin-right: 0;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    transition:.3s;
+    position:relative;
+    height: 36px;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .account > .item > .icon {
+    display:flex;
+    align-items: center;
+    margin-left: 12px;
+} 
+
+@media screen and (min-width:1480px) {
+    .Home-container > .portfolio > .container {
+        width: calc(1480px - 240px - 350px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Home-container {
+        flex-direction: row;
+    }
+
+    .Home-container > .portfolio > .container > .body {
+       padding-left:32px;
+       padding-right: 32px;
+       margin-top:16px;
+       margin-bottom: 16px;
+    }
+    .Home-container > .portfolio > .container > .account  {
+        padding: 0px 32px;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+    .Home-container > .sidebar {
+        min-width:240px;
+    }
+}
+
