@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import SideList from "../../item.json";
-import "../Home.css"
+import "./widget.css"
 import {AiOutlineHome,AiOutlineSearch,AiOutlineArrowLeft,AiOutlineArrowRight,AiFillCaretDown } from 'react-icons/ai'
 
 import {FiMoreHorizontal,FiSettings} from 'react-icons/fi';
@@ -52,26 +52,13 @@ const Widgets = () => {
                                         <div className="Title">
                                                     <h4>{item.Token}</h4>
 
-                                                <div className="Page">
-                                                    <button>
-                                                        <AiOutlineArrowLeft size={12} />
-                                                    </button>
-                                                    <div className="nation">
-                                                        <span>1/1</span>
-                                                    </div>
-                                                    <button>
-                                                        <AiOutlineArrowRight size={12} />
-                                                    </button>
-                                                </div>
-
                                         </div>
                                         <div className="whiteList">
                                             <div className="body">
-                                                <a href="">
-                                                    <div className="background">
-                                                       dwk
-                                                    </div>
-                                                </a>
+                                                       <div className="Center">
+                                                          <h1>No tokens added yet</h1>
+                                                          <p>Search for a token and favourite it to add it to the watchlist</p>   
+                                                        </div>
                                             </div>
                                         </div>
                                     </div>
@@ -216,7 +203,6 @@ const Widgets = () => {
                                                              ₩211,401,716.14
                                                          </div>
                                                      </div>
-
                                                  </div>
                                            </div>
                                        </div>

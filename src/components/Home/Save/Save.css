@@ -1,0 +1,50 @@
+.Save {
+    border-right: 1px solid #2c3a43;
+    display:flex;
+    flex-direction: column;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+}
+
+.Save > .Center {
+    width: 100%;
+    padding-bottom: 32px;
+    -moz-box-flex: 1;
+    flex: 1 1;
+}
+.Save > .Center > .Wrapper {
+    display:flex;
+    flex-direction: column;
+    
+}
+.Save > .Center > .Wrapper > .Body {
+    padding-bottom:32px;
+}
+.Save > .Center > .Wrapper > .Body > .Border {
+    display:flex;
+    flex-direction:column;
+    -moz-box-direction:normal;
+
+}
+.Save > .Center > .Wrapper > .Body > .Border  > .Container {
+    padding-bottom:32px;
+
+}
+.Save > .Center > .Wrapper > .Body > .Border  > .Container > .title {
+   padding-top:32px;  
+   padding-left:32px;
+   padding-right:32px;
+}
+
+.Save > .Center > .Wrapper > .Body > .Border  > .Container > .title > .grid > .text {
+  padding-bottom:12px;
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+@media screen and (min-width: 1480px) {
+    .Save {
+        width: calc(1480px - 240px - 350px);
+    }
+}

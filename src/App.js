@@ -232,18 +232,19 @@ function App (props) {
                 <Routes>
                     {/* route 사용시 element 사용 */}
                     <Route exact path="/" element={<DashBoard/>}/>
-                    <Route exact path="/exchange" element={<ExChange/>} />
+                    <Route exact path="/exchange" element={<DashBoard/>} />
                     <Route exact path="/nft" element={<DashBoard/>}/>
                     <Route exact path="/Ges" element={<DashBoard/>} />
-                    <Route exact path="/pool" element={<Pool/>} />
-                    <Route exact path="/save" element={<Save />}/>
+                    <Route exact path="/pool" element={<DashBoard/>} />
+                    <Route exact path="/save" element={<DashBoard />}/>
                     <Route exact path="/address" element={<Address/>}/>
-                    <Route exact path="/quests" element={<Quests/>}/>
-                    <Route exact path="/quests" element={<Quests/>}/>
+                    <Route exact path="/quests" element={<DashBoard/>}/>
+                    <Route exact path="/rewards" element={<DashBoard/>}/>
                 </Routes>
 
                 </div>
                 <Widgets />
+
 
             </div>
             </div>

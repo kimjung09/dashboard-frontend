@@ -10,6 +10,7 @@ import {FiMoreHorizontal,FiSettings} from 'react-icons/fi';
 import {BsCoin} from 'react-icons/bs'
 import SideList from "../../item.json";
 import Footer from "../Footer/Footer";
+import "./Save.css"
 
 const Pool = () => {
     const activeStyle = {
@@ -19,7 +20,7 @@ const Pool = () => {
     return (
         <div className="Save">
             {SideList.map((item) => (
-                <div className="Pool">
+                <div className="Center">
                     <div className="Wrapper">
                         <div className="Body">
                             <div className="Border">
@@ -29,7 +30,7 @@ const Pool = () => {
                                             <div className="text">
                                                 <>
                                                     <h1>
-                                                        {item.Pool}
+                                                        {item.Save}
                                                     </h1>
                                                     <p>
                                                         {item.SubTitle}

@@ -20,7 +20,7 @@ const Address = () => {
     return (
         <div className="Address">
             {SideList.map((item) => (
-                <div className="Address">
+                <div className="Wrapper">
                      <div className="container">
                              <div className='grid'>
                                Address Book
@@ -30,12 +30,10 @@ const Address = () => {
                         <div className="watchlist">
                             <p>My Bundles</p>
                             <div className="list">
-                                <a className="dark">
-                                    1
-                                </a>
-                                <a className="add">
-
-                                </a>
+                               <div className="add">
+                                   <div className="bundle">+</div>
+                                   <p>Create Bundle</p>
+                                </div>
                             </div>
                             <p className="wallets">Connected Wallets</p>
                             <div className="wallets_list">
@@ -43,9 +41,8 @@ const Address = () => {
                                  <div className="left">
                                      <div className="image">
                                          <canvas width="30" height="30"></canvas>
-                                         <div className="address">ehter</div>
-
                                      </div>
+                                     <div className="address">ehter</div>
 
                                  </div>
                               </a>
@@ -53,9 +50,9 @@ const Address = () => {
                             <p className="wallets_title">
                                 Watched Wallets
                             </p>
-                            <form>
+                            <form className='form'>
                               <div className="select">
-                                  <FaSearch />
+                                  <FaSearch className="icon" />
                                   <div className="holder">
                                       Add ENS domain, valid ETH or BTC address
                                   </div>
