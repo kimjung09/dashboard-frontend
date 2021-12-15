@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 
 
 const DashBoard = (match) => {
-    
+
     // 클릭시 active Style 적용
     const activeStyle = {
         color: '#fffff',
@@ -18,6 +18,8 @@ const DashBoard = (match) => {
     }
     // More 버튼 상세메뉴 open
     const [openMenu, setOpenMenu] = useState(false);
+
+
 
 
     return (
