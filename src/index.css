@@ -1,41 +1,65 @@
-html {
-  height:100%;
+html:root {
+  --background-color:#141a1e;
+  --background-mid-color:#1a2227;
+  --background-med-color: #202a30;
+  --backgroundAltMed: #1c252a;
+  --background-main-transparant: rgba(120,79,254,0.15);
+  --background-shadow-color: 0 2px 16px;
+  --text-color: #fff;
+  --banner-shadow-color: 0 2px 16px;
+  --text-color: #fff;
+  --text-alt-color: #c7d2da;
+  --border-color: #2c3a43;
+  --shadow-color: 0 2px 8px rgba(245,251,255,0.1);
+  --alt-button-shdow-color: #505b63;
+  --main-color: #784ffe;
+}
+
+:root {
+  --bg-alt: #f0f5f9;
+  --dark-bg-alt: #202a30;
+  --text-alt: #657795;
+  --dark-text-alt: #c7d2da;
+  --main: #784ffe;
+  --success: #00d897;
+  --danger: #f1356e;
+  --border: #dfe8f9;
+  --dark-border: #2c3a43;
+}
+
+#next, .wrapper, .wrapper > * , body, html {
+  height: 100%;
+}
+
+button,html,input,select,textarea {
   color:#222;
-  font-size:100%;
-  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  font-size:1005;
 }
 
 * {
   margin:0;
-  padding:0;
-  border:0;
-  vertical-align: baseline;
-  color:#fff;
-}
-
-
-
-/* Dashboar 기본 background 설정 */
-body {
-  background: #141a1e;
-  margin:0;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.3975;
-}
-
-
-
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-  margin: 0;
   padding: 0;
-  border: 0;
+  border:0;
   font:inherit;
-  vertical-align: middle;
+  text-decoration: none;
+
+
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   color:#fff;
+   background:#141a1e;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.3975 ;
+   overflow-x:hidden;
+   text-decoration: none;
+}
+
+#next {
+  height:100%;
 }

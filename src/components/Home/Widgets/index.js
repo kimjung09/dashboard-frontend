@@ -22,7 +22,7 @@ const Widgets = () => {
                             <div className="Box">
                                 {/* 검색 적용 */}
                                 <div className="Search">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    <svg className="icon" stroke="currentColor" fill="currentColor" stroke-width="0"
                                          viewBox="0 0 512 512" className="icon" height="1.5em" width="1.5em"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -126,7 +126,7 @@ const Widgets = () => {
                                   </div>
                                     <div className="site">
                                       <div className="form">
-                                          <a href="https://learn.zapper.fi/articles/a-primer-on-daos" target="_blank">
+                                          <a href="https://learn.zapper.fi/articles/a-primer-on-daos" target="_blank" rel="noreferrer">
                                               <div className="box">
                                                 <div className="icon">
                                                     🤝
@@ -140,7 +140,7 @@ const Widgets = () => {
                                           </a>
                                       </div>
                                         <div className="form">
-                                            <a href="https://learn.zapper.fi/articles/a-primer-on-daos" target="_blank">
+                                            <a href="https://learn.zapper.fi/articles/a-primer-on-daos" target="_blank" rel="noreferrer">
                                                 <div className="box">
                                                     <div className="icon">
                                                         🪙
@@ -154,7 +154,7 @@ const Widgets = () => {
                                             </a>
                                         </div>
                                         <div className="form">
-                                            <a href="https://learn.zapper.fi/articles/a-primer-on-daos" target="_blank">
+                                            <a href="https://learn.zapper.fi/articles/a-primer-on-daos" target="_blank" rel="noreferrer">
                                                 <div className="box">
                                                     <div className="icon">
                                                         🏦
