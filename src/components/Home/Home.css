@@ -1,38 +1,49 @@
-/* 메인 페이지 SideBar Left */
+/* 메인 페이지 Container */
+
 .Home-container {
-    width:100%;
     max-width: 1480px;
     min-height: 100%;
     height: 100%;
     display:flex;
     margin: 0 auto;
 }
-
-/* Category SideBar */
+/* Category SideBar--iscoled */
 .Home-container > .sidebar {
     height: 100%;
     width:240px;
     display:block;
 }
+/* Sidebar -- hidden */
 .Home-container > .sidebar > .hidden {
+   background:#141a1e;
+    border-right: 1px solid #2c3a43;
     display:flex;
     flex-direction: column;
-    height: 100%;
-    padding: 16px;
+    height:100%;
+    padding:16px;
     box-sizing: border-box;
     z-index: 10;
     position:fixed;
-    width: inherit;
+    width:inherit;
     overflow-y: auto;
     overflow-x: hidden;
 }
-/** Zapper Logo **/
+
+/* Mobile 화면 display:none; */
+.Home-container > .Center > .app-header {
+    display: none;
+}
+
+
+/** Zapper Logo brand **/
 .Home-container > .sidebar > .hidden > .brand {
     display:flex;
     align-items: center;
     cursor: pointer;
     margin-bottom: 32px;
+    color:#fff;
 }
+/* mid -- hide */
 .Home-container > .sidebar > .hidden > .brand > .mid {
     margin-left: 12px;
 }
@@ -40,13 +51,15 @@
     font-size:20px;
     font-weight: 600;
 }
+/* hide - end */
 
+
+/* connetd_menu */
 .Home-container > .sidebar > .hidden > .account_conneted {
     display:flex;
     flex: 1 1;
     flex-direction: column;
 }
-
 /** 사용자 정보 account dropdown **/
 .Home-container > .sidebar > .hidden > .account_conneted > .dropdown {
     position: relative;
@@ -72,7 +85,9 @@
     width:100%;
     align-items: center;
 }
-.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .blockie {
+
+/* 프로필 */
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .editable {
     width:40px;
     height:40px;
     box-shadow: 0 0 0 2px #2c3a43;
@@ -81,12 +96,59 @@
     background-size:cover;
     background-position: 50%;
 }
-
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .editable > .edit {
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 11;
+    opacity: 0;
+    transition:.3s;
+    width:100%;
+    height:100%;
+    display:flex;
+    background-color:rgba(0,34,57,.25);
+}
+/* 연결 img */
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .editable > span {
+    position: absolute;
+    bottom:2px;
+    right:0;
+    width:8px;
+    height:8px;
+    border-radius: 5px;
+    background:#00d897;
+}
 .Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .hide {
     margin-left: 12px;
     flex: 1 1;
 }
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .hide > .nick {
+   display:flex;
+    align-items: center;
 
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .hide > .nick > span {
+    font-size: 16px;
+    flex: 1 1;
+    align-items: center;
+    display: flex;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .hide > .nick > button {
+    margin-left: 4px;
+    color:#fff;
+}
+/* 경험치 */
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .hide > .exp {
+   color:#c7d2da;
+    font-size:10px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-top: 2px;
+    justify-content: space-between;
+    display:flex;
+    align-items: center;
+}
 .Home-container > .sidebar > .hidden > .account_conneted  > .sidebar {
     margin-top:16px;
     color:#fff;
@@ -172,7 +234,7 @@
 
 }
 
-
+/* */
 .Home-container > .sidebar > .hidden > .account_conneted > .gamification {
    display:grid;
     grid-gap:8px;
@@ -201,8 +263,6 @@
     line-height: normal;
     padding: 3px 6px;
 }
-
-
 .Home-container > .sidebar > .hidden > .account_conneted > .menu {
     margin-top: 16px;
 }
@@ -250,11 +310,9 @@
     height: 30px;
     border-radius:100%;
 }
-
 .Home-container > .sidebar > .hidden > .account_conneted > .side_menu > span {
     margin-left: 8px;
 }
-
 .Home-container > .sidebar > .hidden > .account_conneted > .box {
     padding-top: 12px;
     justify-content: space-between;
@@ -328,7 +386,6 @@
     display:flex;
     align-items: center;
 }
-
 .Home-container > .sidebar > .hidden > .account_conneted > .box > .mod > .style > .switch > .button {
     width:34px;
     height:39px;
@@ -353,7 +410,6 @@
     display:flex;
     align-items: center;
 }
-
 .Home-container > .sidebar > .hidden > .account_conneted > .box > .mod > .bundle {
     width: 18px;
     height: 18px;
@@ -368,7 +424,10 @@
     border:0px;
     transition: background-color 0.25s ease 0s,transform 0.25s ease 0s, box-shadow 0.15s ease 0s ;
 }
-    /* Center Dashboard  */
+
+
+
+/* Center Dashboard 페이지 부분  */
 .Home-container > .portfolio {
     display:flex;
     flex-direction: column;
@@ -459,31 +518,34 @@
 }
 
 /* Dashboard 페이지 */
-/* Container */
+/* Container  Dashboar 페이지 중간 */
 .Home-container > .Center {
     display:flex;
     flex: 1 1;
     flex-direction: column;
+    min-height: 1273px;
 }
 
-/* */
+/* Dashboard 메인페이지 */
 .Home-container > .Center > .DashBoard {
     display:flex;
     flex-direction: column;
     flex: 1 1;
     border-right: 1px solid #1a2227;
-
 }
+
+/* 중간 Wrapper */
 .Home-container > .Center > .DashBoard > .Wrapper {
     width:100%;
     padding-bottom: 32px;
     flex: 1 1;
     border:1px solid #ffffff;
 }
+
+/* Dashboar Body */
 .Home-container > .Center > .DashBoard > .Wrapper > .Body {
    border-bottom:1px solid #2c3a43;
 }
-
 .Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border {
     width:100%;
     margin:0 auto;
@@ -494,7 +556,6 @@
     align-items: center;
     display:flex;
 }
-
 .Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border > .Container > .title {
     overflow: hidden;
     align-items: center;
@@ -514,7 +575,6 @@
     border-style: solid;
     font-weight:500;
 }
-
 .Home-container > .Center > .DashBoard > .Wrapper > .account {
     border-bottom: 1px solid #2c3a43;
     padding-top:32px;
@@ -601,7 +661,6 @@
     background-size: cover;
     background-position: 50%;
 }
-
 .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .account > .right > .icon > .wallet > .blockie > canvas {
     width:20px;
     height: 20px;
@@ -630,7 +689,6 @@
     cursor: pointer;transition:.3s;
 
 }
-
 .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .worth {
     min-width: auto;
     width:fit-content;
@@ -668,9 +726,7 @@
     margin-right: 8px;
 }
 .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .worth > .edit > .totalen > .icon {
-
 }
-
 .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .tabs {
    display:flex;
 }
@@ -678,7 +734,6 @@
 
 }
 .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .tabs > .item > button {
-    border-bottom: 2px solid #fff;
     color:#fff;
     background: none;
     padding:12px 16px;
@@ -695,10 +750,8 @@
 
     box-sizing: border-box;
     margin: 0 auto;
-    background:red;
 
 }
-
 .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .container {
     padding:16px 0px;
     position: relative;
@@ -727,15 +780,317 @@
 }
 
 
-    /* Widgets */
-.Widgets {
-    position: fixed;
-    z-index: 10;
-    height:100%;
+/* ExChange 페이지 */
+.Home-container > .Center > .ExChange {
     display:flex;
     flex-direction: column;
-    left:calc(50% + 390px);
-    overflow:hidden auto;
+    flex: 1 1;
+}
+.Home-container > .Center > .ExChange > .Wrapper {
+    border-right: 1px solid #1a2227;
+    display:flex;
+    flex-direction: column;
+    flex: 1 1;
+}
+.Home-container > .Center > .ExChange > .Wrapper > .Body {
+    width:100%;
+    flex: 1 1;
+    padding-bottom: 30px;
+}
+.Home-container > .Center > .ExChange > .Wrapper > .Body > .Border {
+   display:flex;
+    flex-direction: column;
+}
+.Home-container > .Center > .ExChange > .Wrapper > .Body > .Border > .Container
+
+/* Pool 페이지 */
+.Home-container > .Center > .Pool {
+}
+
+/* Save 페이지 */
+.Home-container > .Center > .Save {
+    border:1px solid red;
+}
+
+/* Address Book 페이지 */
+.Home-container > .Center > .Address {
+    border:1px solid red;
+}
+
+/* Settings 설정 부분 */
+.Home-container > .Center > .Setting {
+    border:1px solid red;
+}
+
+
+
+/* Widgets 창 */
+.Widgets {
+
+}
+.Widgets > .Container {
+    position:fixed;
+    height: 100%;
+    width:350px;
+    overflow: hidden auto;
+    display:flex;
+    flex-direction: column;
+}
+.Widgets > .Container > .Body {
+    width:100%;
+    padding-bottom: 16px;
+    padding-top: 12px;
+}
+.Widgets > .Container > .Body > .Bottom {
+    padding: 0px 16px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.Widgets > .Container > .Body > .Bottom > .Box {
+    padding-bottom: 16px;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Search {
+    position: relative;
+    flex: 1 1;
+    max-width:400px;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Search > svg {
+    color:#c7d2da;
+    position:absolute;
+    left:0;
+    margin-left: 12px;
+    top:8px;
+    z-index: 1;
+    transition:.3s;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Search > .form {
+   background:#202a30;
+    border:none;
+    height:40px;
+    flex: 1 1;
+    cursor:text;
+
+
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Search > .form > .value {
+    flex-wrap:nowrap;
+    margin-left: 48px;
+    margin-right: 12px;
+    padding: 2px 8px;
+    position:relative;
+    overflow:hidden;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Search > .form > .value > h1 {
+    color:#c7d2da;
+    font-size: 14px;
+
+    box-sizing:border-box;
+
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Toggle {
+    padding-top: 4px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Token {
+    box-sizing:border-box;
+    border:1px solid #2c3a43;
+    background:#1a2227;
+    padding:12px;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Token > .List {
+    display:flex;
+    flex-direction: column;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Token > .List > .Title {
+    padding-bottom: 12px;
+    align-items: center;
+    justify-content: space-between;
+    display:flex;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Token > .List > .Title > h4 {
+    color:#c7d2da;
+    font-size:14px;
+    font-weight: 500;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Token > .List > .Title > .Page {
+    align-items: center;
+    display:flex;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Token > .List > .Title > .Page > button {
+    cursor:not-allowed;
+    background:transparent!important;
+    color:#c7d2da;
+    opacity: .5;
+    padding: 0;
+    text-transform: none;
+    line-height: normal;
+    border:none;
+}
+.Widgets > .Container > .Body > .Bottom > .Box > .Token > .List > .Title > .Page > .nation {
+    padding: 0px 4px;
+    font-size:12px;
+}
+/* 네트워크 Network Binding */
+.Widgets > .Container > .Body > .Bottom > .Network {
+    padding-bottom: 16px;
+}
+.Widgets > .Container > .Body > .Bottom > .Network > .form {
+    border:1px solid #1a2227;
+    background:#2c3a43;
+    border-radius:8px;
+    padding:12px;
+}
+.Widgets > .Container > .Body > .Bottom > .Network > .form > .group {
+    display:flex;
+    flex-direction: column;
+}
+.Widgets > .Container > .Body > .Bottom > .Network > .form > .group > .title {
+    padding-bottom: 12px;
+    color:#c7d2da;
+    font-size:14px;
+    font-weight: 500;
+
+    align-items: center;
+    display:flex;
+}
+.Widgets > .Container > .Body > .Bottom > .Network > .form > .group > .fee {
+    display:flex;
+    flex-direction: column;
+    border:1px solid #fff;
+}
+.Widgets > .Container > .Body > .Bottom > .Network > .form > .group > .fee > .container {
+    overflow: hidden;
+    border:1px solid #2c3a43;
+    border-radius:8px;
+
+}
+.Widgets > .Container > .Body > .Bottom > .Network > .form > .group > .fee > .container > .flex {
+    background-color:#141a1e;
+    padding: 8px 8px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Widgets > .Container > .Body > .Bottom > .Network > .form > .group > .fee > .container > .flex > .title {
+    text-align: left;
+    flex-direction: column;
+    font-weight: 500;
+    font-size:12px;
+}
+.Widgets > .Container > .Body > .Bottom > .Network > .form > .group > .fee > .container > .flex > .min {
+    font-size: 12px;
+    color:#c7d2da;
+    font-weight: 500;
+}
+.Widgets > .Container > .Body > .Bottom > .Learn {
+    margin-top: 16px;
+    display:flex;
+    flex-direction: column;
+    border:1px solid #141a1e;
+    background:#1a2227;
+    padding-bottom: 16px;
+
+}
+.Widgets > .Container > .Body > .Bottom > .Learn > .container {
+   box-sizing:border-box;
+    transition:.3s;
+    border-radius:8px;
+    padding:12px;
+    display:flex;
+    flex-direction: column;
+}
+.Widgets > .Container > .Body > .Bottom > .Learn > .container > .row {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+}
+.Widgets > .Container > .Body > .Bottom > .Learn > .container > .row > h4 {
+    font-size:14px;
+    color:#c7d2da;
+    font-weight: 500;
+}
+.Widgets > .Container > .Body > .Bottom > .Learn > .container > .site {
+    display:flex;
+    flex-direction: column;
+}
+.Widgets > .Container > .Body > .Bottom > .Learn > .container > .site > .form {
+    padding-bottom: 8px;
+    color:#fff;
+
+}
+.Widgets > .Container > .Body > .Bottom > .Trend {
+    transition: .3s;
+    border:1px solid #2c3a43;
+    border-radius: 8px;
+    background:#1a2227;
+    padding:12px;
+    box-sizing:border-box;
+}
+.Widgets > .Container > .Body > .Bottom > .Trend > .form {
+    display:flex;
+    flex-direction: column;
+}
+.Widgets > .Container > .Body > .Bottom > .Trend > .form > .nation {
+    padding-bottom: 12px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cneter footer 부분 */
+.footer {
+    width:100%;
+
+}
+.footer > .container {
+   color:#c7d2da;
+    border-top: 1px solid #2c3a43;
+    padding: 30px 0;
+
+}
+.footer > .container >  .body {
+   display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    flex-grow: 1;
+}
+.footer > .container >  .body > a {
+    display:flex;
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    color:#fff;
+
+
+}
+.footer > .container >  .body > .flex {
+    display:flex;
+    align-items: center;
+}
+.footer > .container >  .body > .flex > a {
+     display:flex;
+     font-size: 14px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+
+/* Footer Media Query (1200 px 최소) */
+@media screen and (min-width:1200px) {
+    .footer > .container > .body {
+        margin:0 auto;
+    }
 }
 
 /** 반응형 모바일 **/
@@ -749,20 +1104,183 @@
         width: calc(1480px - 240px - 350px);
     }
 }
+@media screen and (min-width:1200px) {
+    .Home-container {
+        flex-direction: row;
+    }
+    .Home-container > .sidebar > .hidden > .account_conneted > .box {
+        margin-right: 0;
+        margin-left: 0;
+        flex-display: row;
+        gap:0;
+        grid-gap:0;
+    }
 
+    .Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border {
+        padding: 0px 32px;
+
+    }
+    .Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border > .Container {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body {
+        padding: 0px 32px;
+    }
+
+
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .container > .box > .left > .control {
+        visibility: visible;
+        display:block;
+
+    }
+
+
+}
+@media screen and (min-width: 600px) {
+    .Home-container {
+        flex-direction: row;
+    }
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter {
+
+        padding-right:32px;
+        padding-left:32px;
+
+    }
+}
+@media  screen and (min-width:1200px) {
+    .Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header {
+        padding: 0 12px;
+    }
+
+    .Home-container {
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 600px) {
+   .Home-container > .sidebar {
+       display:none;
+       pointer-events: none;
+       position:fixed;
+   }
+
+    .Home-container > .sidebar > .hidden {
+        overflow-y:auto;
+        display:none;
+    }
+
+    .Home-container > .Center > .app-header {
+        border-bottom: none;
+
+    }
+    .Home-container > .Center > .app-header > .mobile {
+        padding: 0px 16px;
+        justify-content: space-between;
+        display:flex;
+
+
+    }
+    .Home-container > .Center > .app-header > .mobile > .header {
+        justify-content: space-between;
+        display:flex;
+        align-items: center;
+        padding: 0 16px;
+
+    }
+    .Home-container > .Center > .app-header > .mobile > .center {
+        width:40px;
+        height:40px;
+    }
+    .Home-container > .Center > .app-header > .mobile > .search {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width:40px;
+        height:40px;
+        border-radius:20px;
+        transition:.3s;
+    }
+    .Home-container > .Center > .app-header > .header {
+        background:#202a30;
+        padding:12px 16px;
+        display:flex;
+        align-items: center;
+    }
+    .Home-container > .Center > .app-header > .header > img {
+        border:1px solid #2c3a43;
+        width:15px;
+        height:15px;
+        border-radius: 100%;
+        margin-right: 4px;
+        vertical-align: middle;
+    }
+    .Home-container > .Center > .app-header > .header > .point {
+        background: #fff;
+        width:3px;
+        height: 3px;
+        border-radius:3px;
+        margin-left: 8px;
+        margin-right: 8px;
+        align-items: center;
+    }
+    .Home-container > .Center > .app-header > .header > span {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+
+    .Home-container > .Center > .DashBoard > .Wrapper > .Body {
+        width:100%;
+        padding:8px 12px;
+        margin: 8px 0px;
+    }
+    .Home-container > .Center > .DashBoard > .Wrapper > .account {
+        padding-top: 32px;
+    }
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body {
+        padding: 0px 12px;
+    }
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .top {
+
+    }
+    .footer {
+        border-top:1px solid #2c3a43;
+        position: absolute;
+        bottom:0;
+    }
+
+
+
+
+}
+@media screen and (max-width:1024px) {
+    .Widgets {
+        display: none;
+    }
+}
+
+/* only screen */
 /* 1200px NoteBook */
 @media only screen and (min-width: 1200px) {
     .Home-container > .sidebar {
-        min-width: 240px;
+        min-width:240px;
     }
-
+    .Home-container > .Center > .DashBoard {
+        width:calc(1480px - 240px - 350px);
+    }
     .Widgets {
+      width:350px;
+        height:100%;
+        position:relative;
         visibility: visible;
     }
 
 
 }
 
+/* @media screen only 해상도 */
 @media only screen and (max-width:1480px) and (min-width: 1200px) {
     .Widgets {
         right:0;
@@ -772,13 +1290,6 @@
     }
 
 }
-
-@media screen and (max-width:1024px) {
-    .Widgets {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 1200px) and (min-width: 600px) {
     .Home-container > .sidebar {
         width:81px;
@@ -829,7 +1340,7 @@
         margin-left: 8px;
     }
     .Home-container > .sidebar > .hidden > .account_conneted > .network > .header > .flex-max > .label {
-      display:none;
+        display:none;
     }
     .Home-container > .sidebar > .hidden > .account_conneted > .network > .header > .flex-max > .hide {
         display:none;
@@ -839,317 +1350,15 @@
     }
 
 }
-
-
-@media screen and (min-width:1200px) {
-    .Home-container > .sidebar > .hidden > .account_conneted > .box {
-        margin-right: 0;
-        margin-left: 0;
-        flex-display: row;
-        gap:0;
-        grid-gap:0;
+@media only screen and (min-width: 1480px) {
+    .Home-container > .Center > .ExChange > .Wrapper {
+        width: calc(1480px - 240px - 350px);
     }
-
-    .Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border {
-       padding: 0px 32px;
-
-    }
-    .Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border > .Container {
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
-
-    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body {
-        padding: 0px 32px;
-    }
-
-    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter {
-        padding: 0px 32px;
-
-    }
-    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .container > .box > .left > .control {
-        visibility: visible;
-        display:block;
-
-    }
-
-
-}
-
-@media screen and (min-width: 600px) {
-   .Home-container {
-       flex-direction: row;
-   }
-}
-
-@media  screen and (max-width:1200px) {
-    .Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header {
-        padding: 0 12px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-}
-.Home-container {
-    width:100%;
-    max-width: 1480px;
-    min-height: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display:flex;
-}
-
-.Home-container > .sidebar {
-    height: 100%;
-    width:240px;
-    display:block;
-}
-.Home-container > .sidebar > .hidden {
-    background:#141a1e;
-    border-right: 1px solid #2c3a43;
-    display:flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 16px;
-    box-sizing: border-box;
-    z-index: 10;
-    position: fixed;
-    width: inherit;
-    overflow-y: auto;
-}
-.Home-container > .sidebar > .hidden > .brand {
-    display:flex;
-    align-items: center;
-    cursor: pointer;
-    margin-bottom: 32px;
-
-}
-.Home-container > .sidebar > .hidden > .brand > .mid {
-    margin-left: 12px;
-}
-
-.Home-container > .sidebar > .hidden > .account_connted {
-    display:flex;
-    flex: 1 1;
-    flex-direction: column;
-}
-
-.Home-container > .sidebar > .hidden > .account_connted > .dropdown {
-    position: relative;
-    cursor: default;
-    
-}
-
-.Home-container > .sidebar > .hidden > .account_connted  > .sidebar {
-    margin-top:16px;
-    color:#fff;
-}
-.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu {
-    color:#fff;
-    display:flex;
-    padding: 4px 0;
-    align-items: center;
-    border-radius: 8px;
-    transition: .3s;
-    margin-bottom: 8px;
-}
-
-.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu > .icon {
-    display:flex;
-    justify-content:  center;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-}
-
-.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu > .icon > .flex {
-    display:flex;
-    align-items: center;
-}
-.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu > span {
-    font-weight: 500;
-    margin-left: 8px;
-}
-
-.Home-container > .sidebar > .hidden > .account_connted  > .flex-max {
-    display:flex;
-    flex: 1 1;
-}
-
-.Home-container > .sidebar > .hidden > .account_connted > .side_menu {
-    display:flex;
-    color:#c7d2da;
-    padding: 4px 0;
-    align-items: center;
-    border-radius: 8px;   
-}
-.Home-container > .sidebar > .hidden > .account_connted > .side_menu > .icon {
-    display:flex;
-    align-items: center;
-    width:30px;
-    height: 30px;
-    border-radius: 100%;
-}
-.Home-container > .sidebar > .hidden > .account_connted > .side_menu > span {
-    margin-left: 8px; 
-}
-
-.Home-container > .sidebar > .hidden > .account_connted > .network {
-    position:relative;
-    cursor:default;
-}
-.Home-container > .sidebar > .hidden > .account_connted > .network > .header {
-    border:1px solid #2c3a43;
-    background-color: #1a2227;
-    height: 50px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 8px;
-    cursor:pointer;
-    user-select: none;
-}
-
-.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max {
-    display:flex;
-    align-items: center;
-    flex: 1 1;
-}
-.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max > .icon {
-    width:30px;
-    box-shadow: 0 0 0 2px #2c3a43;
-    border-radius: 0;
-    user-select: none;
-}
-
-.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max > .label {
-    margin-left:8px;
-    flex: 1 1;
-}
-.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max > .hide {
-
-}
-
-.Home-container > .portfolio {
-      display:flex;
-      flex-direction: column;
-       flex: 1 1;
-}
-
-.Home-container > .portfolio > .container {
-   border-right:1px solid #2c3a43;
-   display: flex;
-   flex-direction: column;
-   flex: 1 1;
-}
-.Home-container > .portfolio > .container > .body {
-    width: 100%;
-    padding-bottom: 32px;
-    flex: 1 1;
-    border-bottom: 1px solid #2c3a43;
-    max-width:1200px;
-    justify-content: space-between;
-    align-items:center;
-    display:flex
-}
-.Home-container > .portfolio > .container > .body > .Dashboard {
-    border-bottom: 1px solid #2c3a43;
-    line-height: 1.35;
-}
-.Home-container > .portfolio > .container > .account {
-    border-bottom: 1px solid #2c3a43;
-    padding-top: 32px;
-    line-height: 1.35;
-}
-.Home-container > .portfolio > .container > .account > .top {
-    display:flex;
-    margin-bottom:32px;
-    justify-content: space-between;
-}
-.Home-container > .portfolio > .container > .account > .top > .bundle {
-    border:1px solid #2c3a43;
-    display:flex;
-    border-radius: 8px;
-    height: 36px;
-    
-}
-.Home-container > .portfolio > .container > .account > .top > .bundle > .item {
-    background:#202a30;
-    border-radius: 8px 0 0 8px;
-    display:flex;
-    align-items:center;
-    position:relative;
-    cursor:pointer;
-    height:36px;
-}
-.Home-container > .portfolio > .container > .account > .top > .bundle > .item > .icon {
-    display:flex;
-    align-items: center;
-    margin-left: 12px;
-}
-
-.Home-container > .portfolio > .container > .account > .top > .bundle > .item > .icon > .blockie {
-    width:20px;
-    height: 20px;
-    position:relative;
-    box-shadow: 0 0 0 2px #2c3a43;
-    border-radius: 100%;
-    background-size:cover;
-    background-position: 50%;
-}
-.Home-container > .portfolio > .container > .account > .top > .bundle > .item  > h1 {
-    padding: 8px 12px;
-    font-size:14px;
-    font-weight: 500;
-}
-
-.Home-container > .portfolio > .container > .account > .top > .bundle > .account {
-    position:relative;
-    cursor:default;
-}
-
-.Home-container > .portfolio > .container > .account > .top > .bundle > .account > .item {
-    margin-right: 0;
-    border-radius: 0 8px 8px 0;
-    display: flex;
-    align-items: center;
-    transition:.3s;
-    position:relative;
-    height: 36px;
-}
-.Home-container > .portfolio > .container > .account > .top > .bundle > .account > .item > .icon {
-    display:flex;
-    align-items: center;
-    margin-left: 12px;
-} 
-
-@media screen and (min-width:1480px) {
-    .Home-container > .portfolio > .container {
+    .Home-container > .Center > .ExChange {
         width: calc(1480px - 240px - 350px);
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .Home-container {
-        flex-direction: row;
-    }
 
-    .Home-container > .portfolio > .container > .body {
-       padding-left:32px;
-       padding-right: 32px;
-       margin-top:16px;
-       margin-bottom: 16px;
-    }
-    .Home-container > .portfolio > .container > .account  {
-        padding: 0px 32px;
-    }
 
-}
-
-@media only screen and (min-width:1200px) {
-    .Home-container > .sidebar {
-        min-width:240px;
-    }
-}
 

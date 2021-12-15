@@ -12,13 +12,13 @@ import SideList from "../../item.json";
 import Footer from "../Footer/Footer";
 import SideBar from "../SideBar";
 
-const ExChange = () => {
+const Address = () => {
     const activeStyle = {
         color: 'green',
         fontSize: '2rem'
     }
     return (
-        <div className="Home-container">
+        <div className="Address">
             {SideList.map((item) => (
                 <div className="Address">
                      <div className="container">
@@ -88,4 +88,4 @@ const ExChange = () => {
     )
 }
 
-export default ExChange;
+export default Address;

@@ -21,7 +21,6 @@ const Quests = ({match}) => {
 
     return (
         <div className="Home-container">
-            <SideBar/>
             {SideList.map((item) => (
                 <div className="DashBoard">
                     <div className="Wrapper">
@@ -178,68 +177,8 @@ const Quests = ({match}) => {
                             </div>
                         </div>
                     </div>
-                    <Footer />
-
                 </div>
             ))}
-            <div className="Widgets">
-                {SideList.map((item) => (
-                    <div className="Container">
-                        <div className="Body">
-                            <div className="Bottom">
-                                <div className="Box">
-                                    <div className="Search">
-                                        <AiOutlineSearch className="icon "/>
-                                    </div>
-                                </div>
-                                <div className="Box">
-                                    <div className="Toggle">
-                                        <div className="Title">
-                                            Widgets
-                                        </div>
-                                        <div className="Setting">
-                                            <FiSettings size={14}/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="Box">
-                                    <div className="Token">
-                                        <div className="List">
-                                            <div className="Title">
-                                                <div className="form">
-                                                    <div className="title">
-                                                        <h4>{item.Token}</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="Page">
-                                                <button>
-                                                    <AiOutlineArrowLeft size={12} />
-                                                </button>
-                                                <div className="nation">
-                                                    <span>1/1</span>
-                                                </div>
-                                                <button>
-                                                    <AiOutlineArrowRight size={12} />
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="Network">
-                                    <div className="form">
-                                        <div className="group">
-                                            sdsdsds
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="Box"></div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-
-            </div>
 
         </div>
     )

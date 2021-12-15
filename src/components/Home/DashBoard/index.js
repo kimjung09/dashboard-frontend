@@ -9,14 +9,15 @@ import Footer from "../Footer/Footer";
 
 
 const DashBoard = (match) => {
+    
+    // 클릭시 active Style 적용
     const activeStyle = {
         color: '#fffff',
         fontSize: '2rem',
         fontWeight:"bold"
     }
+    // More 버튼 상세메뉴 open
     const [openMenu, setOpenMenu] = useState(false);
-
-
 
 
     return (
@@ -40,7 +41,7 @@ const DashBoard = (match) => {
                             </div>
                         </div>
                     </div>
-                <div className="account">
+                 <div className="account">
                     <div className="Body">
                         <div className="top">
                             {SideList.map((item) => (
@@ -104,16 +105,11 @@ const DashBoard = (match) => {
                                 </div>
                             </>
                         ))}
-                        <div className="filter">
-                            dsds
-                        </div>
                     </div>
-
                 </div>
 
+                    <Footer />
                 </div>
-                <Footer />
-
             </div>
 
         </>

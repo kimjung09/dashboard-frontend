@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import SideList from "../../item.json";
 import "../Home.css"
 import {AiOutlineHome,AiOutlineSearch,AiOutlineArrowLeft,AiOutlineArrowRight,AiFillCaretDown } from 'react-icons/ai'
 
 import {FiMoreHorizontal,FiSettings} from 'react-icons/fi';
 
+
 const Widgets = () => {
+
+   // token 검색
+   const [serach, setSearch] = useState();
+
+
+
     return (
         <div className="Widgets">
             {SideList.map((item) => (
@@ -13,6 +20,7 @@ const Widgets = () => {
                     <div className="Body">
                         <div className="Bottom">
                             <div className="Box">
+                                {/* 검색 적용 */}
                                 <div className="Search">
                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                          viewBox="0 0 512 512" className="icon" height="1.5em" width="1.5em"
@@ -21,7 +29,10 @@ const Widgets = () => {
                                             d="M337.509 305.372h-17.501l-6.571-5.486c20.791-25.232 33.922-57.054 33.922-93.257C347.358 127.632 283.896 64 205.135 64 127.452 64 64 127.632 64 206.629s63.452 142.628 142.225 142.628c35.011 0 67.831-13.167 92.991-34.008l6.561 5.487v17.551L415.18 448 448 415.086 337.509 305.372zm-131.284 0c-54.702 0-98.463-43.887-98.463-98.743 0-54.858 43.761-98.742 98.463-98.742 54.7 0 98.462 43.884 98.462 98.742 0 54.856-43.762 98.743-98.462 98.743z"></path>
                                     </svg>
                                     <div className="form">
-                                    <input type="search" placeholder="search" />
+                                     <div className="value">
+                                         <h1>Search by account, token, ENS...</h1>
+                                     </div>
+                                        <div className="indicators"></div>
                                     </div>
                                 </div>
                             </div>
@@ -39,10 +50,8 @@ const Widgets = () => {
                                 <div className="Token">
                                     <div className="List">
                                         <div className="Title">
-                                            <div className="form">
-                                                <div className="title">
                                                     <h4>{item.Token}</h4>
-                                                </div>
+
                                                 <div className="Page">
                                                     <button>
                                                         <AiOutlineArrowLeft size={12} />
@@ -54,7 +63,6 @@ const Widgets = () => {
                                                         <AiOutlineArrowRight size={12} />
                                                     </button>
                                                 </div>
-                                            </div>
 
                                         </div>
                                         <div className="whiteList">
@@ -81,7 +89,7 @@ const Widgets = () => {
                                                <span className="title">Standard</span>
                                                  <span className="min">~3min</span>
                                              </div>
-                                            <div className="end">
+                                            <div className="flex">
                                                 <span className="title">112</span>
                                                 <div className="description">
                                                     ₩32,545.14
@@ -94,7 +102,7 @@ const Widgets = () => {
                                                   <span className="title">Standard</span>
                                                   <span className="min">~3min</span>
                                               </div>
-                                              <div className="end">
+                                              <div className="flex">
                                                   <span className="title">112</span>
                                                   <div className="description">
                                                       ₩32,545.14
@@ -163,7 +171,7 @@ const Widgets = () => {
                             </div>
                             <div className="Trend">
                                  <div className="form">
-                                     <div className="pagenation">
+                                     <div className="nation">
                                          <h4>
                                              🔥 Pool trend by volume (24h)
                                          </h4>

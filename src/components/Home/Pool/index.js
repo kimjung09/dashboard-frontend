@@ -17,9 +17,9 @@ const Pool = () => {
         fontSize: '2rem'
     }
     return (
-        <div className="Home-container">
+        <div className="Pool">
             {SideList.map((item) => (
-                <div className="DashBoard">
+                <div className="Pool">
                     <div className="Wrapper">
                         <div className="Body">
                             <div className="Border">
