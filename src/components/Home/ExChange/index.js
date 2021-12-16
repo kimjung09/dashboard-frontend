@@ -20,7 +20,7 @@ const ExChange = () => {
                                     <div className="grid">
                                         <div className="text">
                                            <span>ExChange</span>
-                                            <p >
+                                            <p className="top">
                                                 Verwissel in meer dan 2000 tokens met de beste aanhalingstekens uit meer dan 20 bronnen.
                                             </p>
                                             <a href="https://learn.zapper.fi/articles/what-is-a-decentralized-exchange">
@@ -28,6 +28,32 @@ const ExChange = () => {
                                             </a>
                                         </div>
                                     </div>
+                                   
+                                </div>
+                                <div className="Ether">
+                                   <div className="form">
+                                        <div className="item">
+                                            <img src="https://zapper.fi/images/networks/ethereum-icon.png"/>
+                                            <h1>Ethereum</h1>
+                                        </div>
+                                        <div className="item">
+                                            <img src="https://zapper.fi/images/networks/avalanche-icon.png" />
+                                            <h1>Avalanche</h1>
+                                        </div>
+                                        <div className="item">
+                                            <img src="https://zapper.fi/images/networks/binance-smart-chain-icon.png" />
+                                            <h1>BSC</h1>
+                                        </div>
+                                        <div className="item">
+                                            <img src="https://zapper.fi/images/networks/fantom-icon.png" />
+                                            <h1>Fantom</h1>
+                                        </div>
+                                        <div className="item">
+                                            <img src="https://zapper.fi/images/networks/polygon-icon.png" />
+                                            <h1>Polygon</h1>
+                                        </div>
+                                        
+                                    </div>    
                                 </div>
                                 <div className="exchange">
                                    <div className="center">
