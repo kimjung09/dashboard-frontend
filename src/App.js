@@ -232,10 +232,10 @@ function App (props) {
                             <Route exact path="/exchange" element={<ExChange/>} />
                             <Route exact path="/nft" element={<DashBoard/>}/>
                             <Route exact path="/Ges" element={<DashBoard/>} />
-                            <Route exact path="/pool" element={<Pool/>} />
-                            <Route exact path="/save" element={<Save />}/>
-                            <Route exact path="/quests" element={<Quests/>}/>
-                            <Route exact path="/quests" element={<Quests/>}/>
+                            <Route exact path="/pool" element={<ExChange/>} />
+                            <Route exact path="/save" element={<ExChange />}/>
+                            <Route exact path="/quests" element={<ExChange/>}/>
+                            <Route exact path="/address" element={<ExChange/>}/>
                         </Routes>
                     </div>
                     <Widgets />
