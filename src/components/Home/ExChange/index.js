@@ -2,6 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import SideList from "../../item.json";
 import "../Home.css"
+import "../../../App.css"
 import {AiOutlineHome, AiOutlineSearch, AiOutlineArrowLeft, AiOutlineArrowRight, AiFillCaretDown} from 'react-icons/ai'
 import {FaExchangeAlt, FaTwitter} from 'react-icons/fa'
 
