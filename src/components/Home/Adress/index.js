@@ -44,8 +44,8 @@ const Address = () => {
                                         </div>
                                         <div className="address">ehter</div>
 
-                                    </div>
-                                </a>
+                                 </div>
+                              </a>
                             </div>
                             <p className="wallets_title">
                                 Watched Wallets

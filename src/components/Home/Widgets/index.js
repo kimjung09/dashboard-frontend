@@ -51,6 +51,7 @@ const Widgets = () => {
                                     <div className="List">
                                         <div className="Title">
                                             <h4>{item.Token}</h4>
+                                                    <h4>{item.Token}</h4>
 
                                         </div>
                                         <div className="whiteList">
@@ -59,6 +60,10 @@ const Widgets = () => {
                                                     <h1>No tokens added yet</h1>
                                                     <p>Search for a token and favourite it to add it to the watchlist</p>
                                                 </div>
+                                                       <div className="Center">
+                                                          <h1>No tokens added yet</h1>
+                                                          <p>Search for a token and favourite it to add it to the watchlist</p>   
+                                                        </div>
                                             </div>
                                         </div>
                                     </div>
@@ -122,6 +127,16 @@ const Widgets = () => {
                                                         A Primer on DAOs
                                                     </div>
                                                     <div className="read">5 min. read</div>
+                                      <div className="form">
+                                          <a href="https://learn.zapper.fi/articles/a-primer-on-daos" target="_blank" rel="noreferrer">
+                                              <div className="box">
+                                                <div className="icon">
+                                                    🤝
+                                                </div>
+                                                  <div className="sub">
+                                                      A Primer on DAOs
+                                                  </div>
+                                                  <div className="read">5 min. read</div>
 
                                                 </div>
                                             </a>
@@ -154,6 +169,7 @@ const Widgets = () => {
                                             </a>
                                         </div>
                                     </div>
+                                            </a>
                                 </div>
                             </div>
                             <div className="Trend">
@@ -215,6 +231,23 @@ const Widgets = () => {
                                                             className="mr-3">
                                                         </img>
                                                         <div className="right">
+                                                         <div className="won">
+                                                             +
+                                                             ₩211,401,716.14
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                           </div>
+                                       </div>
+                                       <div className="row">
+                                           <div className="border">
+                                               <div className="item">
+                                                   <div className="left">
+                                                       <img
+                                                           src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
+                                                           className="mr-3">
+                                                       </img>
+                                                       <div className="right">
                                                          <span className="title">
                                                          UNI-V2 PYR / ETH
                                                          </span>
@@ -332,10 +365,14 @@ const Widgets = () => {
                         </div>
                     </div>
                 </div>
+
             ))}
 
+
         </div>
+
     )
 }
+
 
 export default Widgets;

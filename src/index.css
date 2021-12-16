@@ -17,13 +17,78 @@ html {
 }
 
 body {
-  background:#141a1e;
-  color:#fff;
-  margin:0;
+  background: #141a1e;
+  color: #fff;
+  margin: 0;
   font-family: Avenir Next, Arial sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.3975;
-  display:block;
+  display: block;
   overflow-y: hidden;
+}
 
+html:root {
+  --background-color:#141a1e;
+  --background-mid-color:#1a2227;
+  --background-med-color: #202a30;
+  --backgroundAltMed: #1c252a;
+  --background-main-transparant: rgba(120,79,254,0.15);
+  --background-shadow-color: 0 2px 16px;
+  --text-color: #fff;
+  --banner-shadow-color: 0 2px 16px;
+  --text-color: #fff;
+  --text-alt-color: #c7d2da;
+  --border-color: #2c3a43;
+  --shadow-color: 0 2px 8px rgba(245,251,255,0.1);
+  --alt-button-shdow-color: #505b63;
+  --main-color: #784ffe;
+}
+
+:root {
+  --bg-alt: #f0f5f9;
+  --dark-bg-alt: #202a30;
+  --text-alt: #657795;
+  --dark-text-alt: #c7d2da;
+  --main: #784ffe;
+  --success: #00d897;
+  --danger: #f1356e;
+  --border: #dfe8f9;
+  --dark-border: #2c3a43;
+}
+
+#next, .wrapper, .wrapper > * , body, html {
+  height: 100%;
+}
+
+button,html,input,select,textarea {
+  color:#222;
+}
+
+html {
+  font-size:100%;
+}
+
+* {
+  margin:0;
+  padding: 0;
+  border:0;
+  font:inherit;
+  text-decoration: none;
+
+
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   color:#fff;
+   background:#141a1e;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.3975 ;
+   overflow-x:hidden;
+   text-decoration: none;
+}
+
+#next {
+  height:100%;
 }

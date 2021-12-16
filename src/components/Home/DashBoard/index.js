@@ -1,8 +1,8 @@
+
 import React, {useState} from "react";
 import SideList from "../../item.json";
 import { NavLink} from "react-router-dom";
-import {BiBookHeart,BiMenu} from 'react-icons/bi';
-import {FaExchangeAlt,FaSearch} from 'react-icons/fa';
+
 import {AiOutlineHome,AiOutlineSearch,AiOutlineArrowLeft,AiOutlineArrowRight,AiFillCaretDown } from 'react-icons/ai'
 import "../Home.css"
 import Footer from "../Footer/Footer";

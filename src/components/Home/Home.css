@@ -6,4 +6,12 @@
         display: none;
         visibility: hidden;
     }
+.Widgets {
 }
+
+@media only screen and (max-width:1200px) {
+    .Widgets {
+        display: none;
+        visibility: hidden;
+    }
+}}

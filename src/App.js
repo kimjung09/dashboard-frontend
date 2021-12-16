@@ -1,15 +1,14 @@
 import React, {useState} from "react";
 import {Routes, Route,NavLink} from "react-router-dom";
 import './App.css';
+import "./components/Home/Widgets/widget.css"
 import "./components/Home/Home.css";
 import DashBoard from "./components/Home/DashBoard";
 import ExChange from "./components/Home/ExChange";
 import Quests from "./components/Home/Quests";
-import Widgets from "./components/Home/Widgets";
-import SideList from "./components/item.json";
+ import SideList from "./components/item.json";
 import Pool from "./components/Home/Pool";
 import Save from './components/Home/Save';
-import Address from "./components/Home/Adress";
 
 
 
@@ -237,12 +236,10 @@ function App (props) {
                             <Route exact path="/Ges" element={<DashBoard/>} />
                             <Route exact path="/pool" element={<Pool/>} />
                             <Route exact path="/save" element={<Save />}/>
-                            <Route exact path="/address" element={<Address/>}/>
                             <Route exact path="/quests" element={<Quests/>}/>
                             <Route exact path="/quests" element={<Quests/>}/>
                         </Routes>
                     </div>
-                    <Widgets />
 
                 </div>
             </div>
