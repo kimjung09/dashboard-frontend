@@ -1,0 +1,1337 @@
+/* 메인 페이지 SideBar Left */
+.Home-container {
+    width:100%;
+    max-width: 1480px;
+    min-height: 100%;
+    height: 100%;
+    display:flex;
+    margin: 0 auto;
+}
+
+/* Category SideBar */
+.Home-container > .sidebar {
+    height: 100%;
+    width:240px;
+    display:block;
+}
+.Home-container > .sidebar > .hidden {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 10;
+    position:fixed;
+    width: inherit;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/** Zapper Logo **/
+.Home-container > .sidebar > .hidden > .brand {
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+.Home-container > .sidebar > .hidden > .brand > .mid {
+    margin-left: 12px;
+}
+.Home-container > .sidebar > .hidden > .brand > .mid > span {
+    font-size:20px;
+    font-weight: 600;
+}
+
+.Home-container > .sidebar > .hidden > .account_conneted {
+    display:flex;
+    flex: 1 1;
+    flex-direction: column;
+}
+
+/** 사용자 정보 account dropdown **/
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown {
+    position: relative;
+    cursor: default;
+
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header {
+    background: #1a2227;
+    color:#fff;
+    border:1px solid #2c3a43;
+
+    display:flex;
+    align-items: center;
+    padding: 0 12px;
+    height: 54px;
+    transition: .3s;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account {
+    display:flex;
+    width:100%;
+    align-items: center;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .blockie {
+    width:40px;
+    height:40px;
+    box-shadow: 0 0 0 2px #2c3a43;
+    position:relative;
+    border-radius: 100%;
+    background-size:cover;
+    background-position: 50%;
+}
+
+.Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header > .account > .hide {
+    margin-left: 12px;
+    flex: 1 1;
+}
+
+.Home-container > .sidebar > .hidden > .account_conneted  > .sidebar {
+    margin-top:16px;
+    color:#fff;
+}
+.Home-container > .sidebar > .hidden > .account_conneted  > .sidebar > .menu {
+    color:#000;
+    padding: 4px 0;
+    align-items: center;
+    border-radius: 8px;
+    transition: .3s;
+
+    margin-bottom: 8px;
+    z-index: 1;
+}
+.Home-container > .sidebar > .hidden > .account_conneted  > .sidebar > .menu > .icon {
+    display:flex;
+    justify-content:  center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.Home-container > .sidebar > .hidden > .account_conneted  > .sidebar > .menu > .icon > .flex {
+    display:flex;
+    align-items: center;
+}
+.Home-container > .sidebar > .hidden > .account_conneted  > .sidebar > .menu > span {
+    font-weight: 500;
+    margin-left: 8px;
+}
+.Home-container > .sidebar > .hidden > .account_conneted  > .flex-max {
+    display:flex;
+    flex: 1 1;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .side_menu {
+    display:flex;
+    color:#c7d2da;
+    padding: 4px 0;
+    align-items: center;
+    border-radius: 8px;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .side_menu > .icon {
+    display:flex;
+    align-items: center;
+    width:30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .side_menu > span {
+    margin-left: 8px;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .network {
+    position:relative;
+    cursor:default;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .network > .header {
+    border:1px solid #2c3a43;
+    background-color: #1a2227;
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor:pointer;
+    user-select: none;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .network > .header > .flex-max {
+    display:flex;
+    align-items: center;
+    flex: 1 1;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .network > .header > .flex-max > .icon {
+    width:30px;
+    box-shadow: 0 0 0 2px #2c3a43;
+    border-radius: 100%;
+    user-select: none;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .network > .header > .flex-max > .label {
+    margin-left:8px;
+    flex: 1 1;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .network > .header > .flex-max > .hide {
+
+}
+
+
+.Home-container > .sidebar > .hidden > .account_conneted > .gamification {
+    display:grid;
+    grid-gap:8px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .gamification > a {
+
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .gamification > a > button {
+    color:#c7d2da;
+    background:#202a30;
+    min-height: 22px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width:100%;
+    border-radius: 4px;
+
+    font-size:12px;
+    height: auto;
+    line-height: normal;
+    padding: 3px 6px;
+}
+
+
+.Home-container > .sidebar > .hidden > .account_conneted > .menu {
+    margin-top: 16px;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .menu > .item {
+    color:#fff;
+    display:flex;
+    padding: 4px 0;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: .3s;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .menu > .item > .icon {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width:30px;
+    border-radius: 100%;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .menu > .item > span {
+    font-weight: 500;
+    margin-left: 8px;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .menu > .sidebar {
+    display:flex;
+    padding:4px 0;
+    align-items: center;
+    border-radius:8px;
+    margin-bottom: 8px;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .side_menu {
+    color:#c7d2da;
+    padding: 4px 0;
+    display:flex;
+    align-items: center;
+    border-radius:8px;
+    margin-bottom: 8px;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .side_menu > .icon {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:30px;
+    height: 30px;
+    border-radius:100%;
+}
+
+.Home-container > .sidebar > .hidden > .account_conneted > .side_menu > span {
+    margin-left: 8px;
+}
+
+.Home-container > .sidebar > .hidden > .account_conneted > .box {
+    padding-top: 12px;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .language {
+    width:fit-content;
+    cursor:pointer;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .language > .pop {
+    margin:0;
+    height:30px;
+    max-width: 200px;
+    trnasition:.3s;
+    border:1px solid #2c3a43;
+    border-radius:8px;
+    background-color:#1a2227;
+    color:#fff;
+    font-size:14px;
+    font-weight: 500;
+    padding: 0px 8px;
+    flex-direction: row;
+    align-items: center;
+    display:flex;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .language > .pop > img {
+    margin:0;
+    box-shadow: 0 0 0 2px #2c3a43;
+    width:20px;
+    height: 20px;
+    border-radius:100%;
+    vertical-align: middle;
+    border:0;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .language > .pop > .title {
+    display:flex;
+    padding-left: 8px;
+    align-items: center;
+
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .mod {
+    width:fit-content;
+
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .mod > .style {
+    position:relative;
+    display:inline-block;
+    text-align: left;
+    opacity: 1;
+    direction: ltr;
+    border-radius: 17px;
+    transition: opacity 0.25s ease 0s;
+    touch-action: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    user-select: none;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .mod > .style > .switch {
+    width:64px;
+    height: 34px;
+    margin:0;
+    position: relative;
+    background: rgb(120,79,254);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.25s ease 0s;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .mod > .style > .switch > .icon {
+    justify-content: center;
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .mod > .style > .switch > .button {
+    width:34px;
+    height:39px;
+    position: relative;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.25s ease 0s;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .mod > .style  > .button  {
+    width:39px;
+    height: 34px;
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease 0s;
+}
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .mod > .style  > .button > .icon {
+    height: 100%;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+
+.Home-container > .sidebar > .hidden > .account_conneted > .box > .mod > .bundle {
+    width: 18px;
+    height: 18px;
+    background: rgb(255,255,255);
+    display:inline-block;
+    cursor: pointer;
+    border-radius: 7px;
+    position:absolute;
+    transform: translateX(38px);
+    top: 8px;
+    outline: 0px;
+    border:0px;
+    transition: background-color 0.25s ease 0s,transform 0.25s ease 0s, box-shadow 0.15s ease 0s ;
+}
+/* Center Dashboard  */
+.Home-container > .portfolio {
+    display:flex;
+    flex-direction: column;
+    flex: 1 1;
+}
+.Home-container > .portfolio > .container {
+    border-right:1px solid #2c3a43;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+}
+.Home-container > .portfolio > .container > .body {
+    width: 100%;
+    padding-bottom: 32px;
+    flex: 1 1;
+    border-bottom: 1px solid #2c3a43;
+    max-width:1200px;
+    justify-content: space-between;
+    align-items:center;
+    display:flex
+}
+.Home-container > .portfolio > .container > .body > .Dashboard {
+    border-bottom: 1px solid #2c3a43;
+    line-height: 1.35;
+}
+.Home-container > .portfolio > .container > .account {
+    border-bottom: 1px solid #2c3a43;
+    padding-top: 32px;
+    line-height: 1.35;
+}
+.Home-container > .portfolio > .container > .account > .top {
+    display:flex;
+    margin-bottom:32px;
+    justify-content: space-between;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle {
+    border:1px solid #2c3a43;
+    display:flex;
+    border-radius: 8px;
+    height: 36px;
+
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item {
+    background:#202a30;
+    border-radius: 8px 0 0 8px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    cursor:pointer;
+    height:36px;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item > .icon {
+    display:flex;
+    align-items: center;
+    margin-left: 12px;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item > .icon > .blockie {
+    width:20px;
+    height: 20px;
+    position:relative;
+    box-shadow: 0 0 0 2px #2c3a43;
+    border-radius: 100%;
+    background-size:cover;
+    background-position: 50%;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item  > h1 {
+    padding: 8px 12px;
+    font-size:14px;
+    font-weight: 500;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .account {
+    position:relative;
+    cursor:default;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .account > .item {
+    margin-right: 0;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    transition:.3s;
+    position:relative;
+    height: 36px;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .account > .item > .icon {
+    display:flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+/* Dashboard 페이지 */
+/* Container */
+.Home-container > .Center {
+    display:flex;
+    flex: 1 1;
+    flex-direction: column;
+}
+
+/* */
+.Home-container > .Center > .DashBoard {
+    display:flex;
+    flex-direction: column;
+    flex: 1 1;
+    border-right: 1px solid #1a2227;
+
+}
+
+.Home-container > .DashBoard >.footer {
+    width:100%;
+    position:absolute;
+    bottom:0;
+
+}
+.footer > .container {
+    color:#c7d2da;
+    border-top: 1px solid #2c3a43;
+    padding:30px 0;
+    display:block;
+}
+
+.footer > .container > .body {
+    display:flex;
+    align-items: center;
+    margin:0 auto;
+    flex-wrap:wrap;
+    width: 100%;
+    padding:0 32px;
+    max-width:1200px;
+    flex-grow:1;
+}
+
+.footer > .container > .body > a {
+    display:flex;
+    font-size:14px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    color:#fff
+}
+.footer > .container > .body > .flex {
+    display:flex;
+    grid-gap:12px;
+    gap:12px;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper {
+    width:100%;
+    padding-bottom: 32px;
+    flex: 1 1;
+    border:1px solid #ffffff;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .Body {
+    border-bottom:1px solid #2c3a43;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border {
+    width:100%;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border > .Container {
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border > .Container > .title {
+    overflow: hidden;
+    align-items: center;
+    display:flex;
+    flex: 1 1;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border > .Container > .title > .grid {
+    width:100%;
+    display:grid;
+    grid-template-columns: min-content minmax(100px, min-content);
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border > .Container > .title > .grid > .text {
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size:18px;
+    border-style: solid;
+    font-weight:500;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account {
+    border-bottom: 1px solid #2c3a43;
+    padding-top:32px;
+    line-height: 1.35;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body {
+    max-width:1200px;
+    width:100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top {
+    display:flex;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle {
+    border:1px solid #2c3a43;
+    display:flex;
+    border-radius: 8px;
+    height: 36px;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .item {
+    background: #202a30;
+    border-radius: 8px 0 0 8px;
+    display:flex;
+    align-items: center;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+    height: 36px;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .item >  .icon {
+    display:flex;
+    align-items: center;
+    margin-left: 12px;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .item >  .icon > .blockie {
+    width:20px;
+    height: 20px;
+    box-shadow: 0 0 0 2px #2c3a43;
+    position: relative;
+    border-radius:100%;
+    background-size:cover;
+    background-position: 50%;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .item > .label {
+    padding: 8px 12px;
+    font-size:14px;
+    font-weight: 500;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .account {
+    position:relative;
+    cursor: default;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .account > .right {
+    margin-right: 0;
+    border-radius: 0 8px 8px 0;
+    display:flex;
+    align-items: center;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+    height: 36px;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .account > .right > .icon {
+    display:flex;
+    align-items: center;
+    margin-left: 12px;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .account > .right > .icon > .wallet {
+    z-index: 4;
+    display:flex;
+    align-items: center;
+    position:relative;
+    transition: .3s;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .account > .right > .icon > .wallet > .blockie {
+    width:20px;
+    height:20px;
+    box-shadow: 0 0 0 2px #2c3a43;
+    position:relative;
+    border-radius:100%;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .account > .right > .icon > .wallet > .blockie > canvas {
+    width:20px;
+    height: 20px;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .account > .right > .flex {
+    display:flex;
+    align-items: center;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .account > .right > .flex > .label {
+    padding: 8px 12px;
+    font-size:14px;
+    font-weight: 500;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .top > .bundle > .account > .right > .flex > button {
+    color:#fff;
+    background:#141a1e;
+    border:1px solid #2c3a43;
+    margin-right: 8px;
+    width:28px;
+    height: 28px;
+    border-radius: 100%;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;transition:.3s;
+
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .worth {
+    min-width: auto;
+    width:fit-content;
+    border-radius:8px;
+    margin-bottom: 28px;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .worth > .title {
+    color:#c7d2da;
+    align-items: center;
+    display:flex;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .worth > .doller {
+    display:flex;
+    margin-bottom: 8px;
+    color:#c7d2da;
+    font-size:30px;
+    font-weight: 500;
+    flex:1 1;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .worth > .edit {
+    display:flex;
+    align-items: center;
+
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .worth > .edit > .totalen {
+    transition: .3s;
+    cursor:pointer;
+    border:1px solid #2c3a43;
+    background-color:#1a2227;
+    color:#fff;
+    opacity:1;
+    align-items: center;
+    display:flex;
+    padding: 4px 16px;
+    margin-right: 8px;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .worth > .edit > .totalen > .icon {
+
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .tabs {
+    display:flex;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .tabs > .item {
+
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body  > .tabs > .item > button {
+    border-bottom: 2px solid #fff;
+    color:#fff;
+    background: none;
+    padding:12px 16px;
+    min-width:100px;
+    font-weight: 500;
+    transition:.3s;
+    cursor:pointer;
+    box-sizing:border-box;
+    border-radius: 0;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter {
+    width:100%;
+    max-width:1200px;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+    position:relative;
+
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom {
+    padding-bottom: 16px;
+    padding-top: 16px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .form {
+    align-items: center;
+    display:flex;
+}
+
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .form > .box {
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .form > .box > .trans {
+    background:transparent;
+    border:1px solid #2c3a43;
+    background:#202a30;
+
+    display:flex;
+    align-items:center;
+    padding:4px 8px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .form > .box > .trans > .control_item--active {
+    background:#202a30;
+    padding:4px 8px;
+    color:#fff;
+    transition:.3s;
+    font-size:12px;
+    font-weight:600;
+    text-transform: uppercase;
+    display:flex;
+    align-items:center;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .form > .box > .trans > .control_item {
+    padding:4px 8px;
+    background:#202a30;
+
+    color:#fff;
+    transition:.3s;
+    font-size:12px;
+    font-weight:600;
+    text-transform: uppercase;
+    display:flex;
+    align-items:center;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .form >.control {
+    background:#1a2227;
+    border:1px solid #2c3a43;
+    height: 32px;
+    border-radius: 8px;
+    display:flex;
+    align-items: center;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .form >.control > .item {
+    padding: 4px 8px;
+    border-radius:8px;
+    font-size:12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .form >.control > .item > .flex {
+    display: flex;
+    align-items:center;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .network {
+    display:flex;
+    align-items: center;
+
+}
+
+@media screen and (min-width:1200px) {
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .network {
+        justify-content: flex-start;
+    }
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .form >.control > .item > span {
+    font-size:14px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .network {
+    display:flex;
+    align-items: center;
+
+}
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .network > .form  > .button {
+    transition: .3s;
+    border:1px solid #1a2227;
+    border-radius: 8px;
+    padding-right:12px;
+    width:fit-content;
+    padding: 8px 12px;
+    align-items: center;
+    display:flex;
+    background:#1a2227;
+}
+
+
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .network > .form  > .button > .title {
+    border-radius: 8px;
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight: 600;
+    align-items:center;
+    display:flex;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .network > .form  > .button > .title > p {
+    margin-left: 8px;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .network > .box {
+    margin-left: 8px;
+    font-size:12px;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition:.3s;
+    font-weight: 600;
+}
+.Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .network > .box  > .icon {
+    border:1px solid #2c3a43;
+    background:#141a1e;
+    width:fit-content;
+    padding: 4px 8px;
+    align-items: center;
+    border-radius:8px;
+    display:flex;
+}
+
+.Home-container > .Center > .Widgets {
+    background:red;
+}
+
+
+@media screen and (min-width:1200px) {
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .form > .box  {
+        visibility:visible;
+        display:block;
+    }
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .network > .from {
+        visibility: visible;
+        display:block;
+    }
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .bottom > .network > .form  > .button > .title > p {
+        display:block;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    .Home-container > .Center > .Widgets {
+        width:350px;
+        height: 100%;
+    }
+}
+
+
+
+
+/* Widgets */
+.Widgets {
+    position: fixed;
+    z-index: 10;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    left:calc(50% + 390px);
+    overflow:hidden auto;
+}
+
+/** 반응형 모바일 **/
+
+/** 1480px Desktop 기준 **/
+@media screen and (min-width:1480px) {
+    .Home-container {
+        flex-direction: row;
+    }
+    .Home-container > .Center > .DashBoard {
+        width: calc(1480px - 240px - 350px);
+    }
+}
+
+/* 1200px NoteBook */
+@media only screen and (min-width: 1200px) {
+    .Home-container > .sidebar {
+        min-width: 240px;
+    }
+
+    .Widgets {
+        visibility: visible;
+    }
+
+
+}
+
+@media only screen and (max-width:1480px) and (min-width: 1200px) {
+    .Widgets {
+        right:0;
+        left: auto;
+
+        visibility: visible;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .Widgets {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+    .Home-container > .sidebar {
+        width:81px;
+        min-width: 81px;
+
+    }
+
+    .Home-container > .sidebar > .hidden {
+        padding: 16px 8px;
+    }
+
+    .Home-container > .sidebar > .hidden > .brand {
+        justify-content: center;
+    }
+
+    .Home-container > .sidebar > .hidden > .brand > .mid {
+        display:none;
+
+    }
+    .Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header {
+        padding: 0 12px;
+    }
+
+    .Home-container > .sidebar > .hidden > .account_conneted > .gamification {
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 8px;
+        padding: 0;
+
+    }
+
+    .Home-container > .sidebar > .hidden > .account_conneted > .menu > .item {
+        justify-content: center;
+    }
+
+    .Home-container > .sidebar > .hidden > .account_conneted > .menu > .item > span {
+        display:none;
+    }
+    .Home-container > .sidebar > .hidden > .account_conneted  > .flex-max {
+
+    }
+    .Home-container > .sidebar > .hidden > .account_conneted > .side_menu {
+        justify-content: center;
+    }
+    .Home-container > .sidebar > .hidden > .account_conneted > .side_menu > span {
+        display:none;
+    }
+    .Home-container > .sidebar > .hidden > .account_conneted > .side_menu > label {
+        margin-left: 8px;
+    }
+    .Home-container > .sidebar > .hidden > .account_conneted > .network > .header > .flex-max > .label {
+        display:none;
+    }
+    .Home-container > .sidebar > .hidden > .account_conneted > .network > .header > .flex-max > .hide {
+        display:none;
+    }
+    .Home-container > .sidebar > .hidden > .account_conneted > .box > .language > .pop > .title > span {
+        display:none;
+    }
+
+}
+
+
+@media screen and (min-width:1200px) {
+    .Home-container > .sidebar > .hidden > .account_conneted > .box {
+        margin-right: 0;
+        margin-left: 0;
+        flex-display: row;
+        gap:0;
+        grid-gap:0;
+    }
+
+    .Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border {
+        padding: 0px 32px;
+
+    }
+    .Home-container > .Center > .DashBoard > .Wrapper > .Body > .Border > .Container {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body {
+        padding: 0px 32px;
+    }
+
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter {
+        padding: 0px 32px;
+
+    }
+    .Home-container > .Center > .DashBoard > .Wrapper > .account > .Body > .filter > .container > .box > .left > .control {
+        visibility: visible;
+        display:block;
+
+    }
+
+
+}
+
+@media screen and (min-width: 600px) {
+    .Home-container {
+        flex-direction: row;
+    }
+}
+
+@media  screen and (max-width:1200px) {
+    .Home-container > .sidebar > .hidden > .account_conneted > .dropdown > .header {
+        padding: 0 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+}
+.Home-container {
+    width:100%;
+    max-width: 1480px;
+    min-height: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display:flex;
+}
+
+.Home-container > .sidebar {
+    height: 100%;
+    width:240px;
+    display:block;
+}
+.Home-container > .sidebar > .hidden {
+    background:#141a1e;
+    border-right: 1px solid #2c3a43;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 10;
+    position: fixed;
+    width: inherit;
+    overflow-y: auto;
+}
+.Home-container > .sidebar > .hidden > .brand {
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 32px;
+
+}
+.Home-container > .sidebar > .hidden > .brand > .mid {
+    margin-left: 12px;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted {
+    display:flex;
+    flex: 1 1;
+    flex-direction: column;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted > .dropdown {
+    position: relative;
+    cursor: default;
+
+}
+
+.Home-container > .sidebar > .hidden > .account_connted  > .sidebar {
+    margin-top:16px;
+    color:#fff;
+}
+.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu {
+    color:#fff;
+    display:flex;
+    padding: 4px 0;
+    align-items: center;
+    border-radius: 8px;
+    transition: .3s;
+    margin-bottom: 8px;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu > .icon {
+    display:flex;
+    justify-content:  center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu > .icon > .flex {
+    display:flex;
+    align-items: center;
+}
+.Home-container > .sidebar > .hidden > .account_connted  > .sidebar > .menu > span {
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted  > .flex-max {
+    display:flex;
+    flex: 1 1;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted > .side_menu {
+    display:flex;
+    color:#c7d2da;
+    padding: 4px 0;
+    align-items: center;
+    border-radius: 8px;
+}
+.Home-container > .sidebar > .hidden > .account_connted > .side_menu > .icon {
+    display:flex;
+    align-items: center;
+    width:30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.Home-container > .sidebar > .hidden > .account_connted > .side_menu > span {
+    margin-left: 8px;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted > .network {
+    position:relative;
+    cursor:default;
+}
+.Home-container > .sidebar > .hidden > .account_connted > .network > .header {
+    border:1px solid #2c3a43;
+    background-color: #1a2227;
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor:pointer;
+    user-select: none;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max {
+    display:flex;
+    align-items: center;
+    flex: 1 1;
+}
+.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max > .icon {
+    width:30px;
+    box-shadow: 0 0 0 2px #2c3a43;
+    border-radius: 0;
+    user-select: none;
+}
+
+.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max > .label {
+    margin-left:8px;
+    flex: 1 1;
+}
+.Home-container > .sidebar > .hidden > .account_connted > .network > .header > .flex-max > .hide {
+
+}
+
+.Home-container > .portfolio {
+    display:flex;
+    flex-direction: column;
+    flex: 1 1;
+}
+
+.Home-container > .portfolio > .container {
+    border-right:1px solid #2c3a43;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+}
+.Home-container > .portfolio > .container > .body {
+    width: 100%;
+    padding-bottom: 32px;
+    flex: 1 1;
+    border-bottom: 1px solid #2c3a43;
+    max-width:1200px;
+    justify-content: space-between;
+    align-items:center;
+    display:flex
+}
+.Home-container > .portfolio > .container > .body > .Dashboard {
+    border-bottom: 1px solid #2c3a43;
+    line-height: 1.35;
+}
+.Home-container > .portfolio > .container > .account {
+    border-bottom: 1px solid #2c3a43;
+    padding-top: 32px;
+    line-height: 1.35;
+}
+.Home-container > .portfolio > .container > .account > .top {
+    display:flex;
+    margin-bottom:32px;
+    justify-content: space-between;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle {
+    border:1px solid #2c3a43;
+    display:flex;
+    border-radius: 8px;
+    height: 36px;
+
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item {
+    background:#202a30;
+    border-radius: 8px 0 0 8px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    cursor:pointer;
+    height:36px;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item > .icon {
+    display:flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item > .icon > .blockie {
+    width:20px;
+    height: 20px;
+    position:relative;
+    box-shadow: 0 0 0 2px #2c3a43;
+    border-radius: 100%;
+    background-size:cover;
+    background-position: 50%;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .item  > h1 {
+    padding: 8px 12px;
+    font-size:14px;
+    font-weight: 500;
+}
+
+.Home-container > .portfolio > .container > .account > .top > .bundle > .account {
+    position:relative;
+    cursor:default;
+}
+
+.Home-container > .portfolio > .container > .account > .top > .bundle > .account > .item {
+    margin-right: 0;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    transition:.3s;
+    position:relative;
+    height: 36px;
+}
+.Home-container > .portfolio > .container > .account > .top > .bundle > .account > .item > .icon {
+    display:flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+
+
+@media screen and (min-width:1480px) {
+    .Home-container > .portfolio > .container {
+        width: calc(1480px - 240px - 350px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Home-container {
+        flex-direction: row;
+    }
+
+    .Home-container > .portfolio > .container > .body {
+        padding-left:32px;
+        padding-right: 32px;
+        margin-top:16px;
+        margin-bottom: 16px;
+    }
+    .Home-container > .portfolio > .container > .account  {
+        padding: 0px 32px;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+    .Home-container > .sidebar {
+        min-width:240px;
+    }
+}

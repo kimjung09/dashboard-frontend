@@ -19,121 +19,83 @@ const Pool = () => {
     return (
         <div className="Pool">
             {SideList.map((item) => (
-                <div className="Pool">
+                <div className="Body">
                     <div className="Wrapper">
-                        <div className="Body">
-                            <div className="Border">
-                                <div className="Container">
-                                    <div className="title">
-                                        <div className="grid">
-                                            <div className="text">
-                                                <>
-                                                    <h1>
-                                                        {item.Pool}
-                                                    </h1>
-                                                    <p>
-                                                        {item.SubTitle}
-                                                    </p>
-                                                    <a href="">
-                                                        {item.More}
-                                                    </a>
-                                                </>
+                            <div className="top">
+                                 <div className="title">
+                                     <div className="container">
+                                     <div className="pool">
+                                         <h1>Liquid</h1>
+                                         <p>liquiditeit toevoegen om transactiekosten te verdienen, prikkels, stemrecht, enz. </p>
+                                     </div>
+                                     <div className="more">
+                                         <a href="https://learn.zapper.fi/articles/what-is-a-liquidity-pool">
+                                             Meer informatie
+                                         </a>
+                                     </div>
+                                     </div>
+                                 </div>
+                            </div>
+                        <div className="form">
+                            <div className="container">
+                                <div className="row">
+                                    <h4>
+                                        Verken kensen
+                                    </h4>
+                                    <div className="table">
+                                        <div className="options">
+                                             <div className="left">
+                                                 <div className="box">
+                                                     <div className="skeleton">
+
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                            <div className="right">
+                                                <div className="page">
+                                                    <div className="skeleton">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <table role="table" cellSpacing="0">
+                                            <thead>
+                                               <tr role="row">
+                                                   <th className="no-flex">#</th>
+                                                   <th colspan="1" role="columnheader" title="Toggle SortBy">
+                                                       <div className="false">
+                                                           Beschikbare Pools
+                                                       </div>
+                                                   </th>
+                                                   <th colSpan="1" role="columnheader" title="Toggle SortBy">
+                                                       <div className="false">
+                                                           Beschikbare Pools
+                                                       </div>
+                                                   </th>
+                                                   <th colSpan="1" role="columnheader" title="Toggle SortBy">
+                                                       <div className="false">
+                                                           Beschikbare Pools
+                                                       </div>
+                                                   </th>
+
+                                               </tr>
+                                            </thead>
+                                            <tbody role="rowgroup">
+                                               <tr row="row">
+                                                   <td className="no-flex" width="50">1</td>
+                                               </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="select">
-                            <div className="Body">
-                                <div className="tab">
-                                    <div className="item">
-                                        <img src="https://zapper.fi/images/networks/ethereum-icon.png"/>
-                                        <div className="title">{item.Ethereum}</div>
-                                    </div>
-                                    <div className="item">
-                                        <img src="https://zapper.fi/images/networks/avalanche-icon.png" />
-                                        <div className="title">{item.Avalanche}</div>
-                                    </div>
-                                    <div className="item">
-                                        <img src="https://zapper.fi/images/networks/binance-smart-chain-icon.png"/>
-                                        <div className="title">{item.BSC}</div>
-                                    </div>
-                                    <div className="item">
-                                        <img src="https://zapper.fi/images/networks/fantom-icon.png"/>
-                                        <div className="title">{item.Fantom}</div>
-                                    </div>
-                                    <div className="item">
-                                        <img src="https://zapper.fi/images/networks/polygon-icon.png"/>
-                                        <div className="title">{item.Polygon}</div>
-                                    </div>
 
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    <div className="Explore">
-                        <div className="Container">
-                            <div className="full">
-                                <div className="explore">
-                                   <div className="header">
-                                       <h4> Explore Opportunities</h4>
-                                   </div>
-                                </div>
-                                <div className="table">
-                                    <thead>
-                                      <tr role="row">
-                                          <th>#</th>
-                                          <th colspan="1" className="no-flex">
-                                              Available Pools
-                                          </th>
-                                          <th colSpan="1" >
-                                              Available Pools
-                                          </th>
-                                          <th colSpan="1" >
-                                              Available Pools
-                                          </th>
-                                          <th colSpan="1">
-                                              Available Pools
-                                          </th>
-                                      </tr>
-                                    </thead>
-
-                                    <tbody role="rowgroup">
-                                      <tr role="row">
-                                          <td className="no-flex" width="50">21</td>
-                                          {/*} <td className="box">
-                                          {/*    <div className="flex">*/}
-                                          {/*     <div className="logo">*/}
-                                          {/*        <div className="group">*/}
-                                          {/*            <img src="https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x0000000000000000000000000000000000000000.png"*/}
-
-                                          {/*            />*/}
-                                          {/*            <img src="https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x0000000000000000000000000000000000000000.png"/>*/}
-                                          {/*        </div>*/}
-                                          {/*     </div>*/}
-                                          {/*    </div>*/}
-                                          {/*</td>*/}
-                                          <td className="cell" role="cell">
-                                               <div>₩610,609,474,381</div>
-                                          </td>
-                                          <td className="cell" role="cell">
-                                              <div className="cell_SecondaryText">0.05% (1w)</div>
-                                              <div>% (1y)</div>
-                                          </td>
-                                      </tr>
-
-                                    </tbody>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <Footer />
-
+                        <Footer/>
+                       </div>
                 </div>
+                ))}
 
-            ))}
         </div>
     )
 }

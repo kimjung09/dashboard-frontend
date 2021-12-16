@@ -9,7 +9,7 @@ const Footer = () => {
             {SideList.map((item) => (
             <footer className="container">
                 <div className="body">
-                    <a href="https://zapper.canny.io/" className="link mr-5">{item.Fun}</a>
+                    <a href="https://zapper.canny.io/" className="link mr-5">Functieverzoek</a>
                     <a href="https://zapper.canny.io/" className="link mr-5">{item.Bug}</a>
                     <a href="https://zapper.canny.io/" className="link mr-5">{item.Onder}</a>
 

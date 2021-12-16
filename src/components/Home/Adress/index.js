@@ -20,53 +20,50 @@ const Address = () => {
     return (
         <div className="Address">
             {SideList.map((item) => (
-                <div className="Address">
-                     <div className="container">
-                             <div className='grid'>
-                               Address Book
-                             </div>
-                     </div>
+                <div className="Wrapper">
+                    <div className="container">
+                        <div className='grid'>
+                            Address Book
+                        </div>
+                    </div>
                     <div className="bundle">
                         <div className="watchlist">
                             <p>My Bundles</p>
                             <div className="list">
-                                <a className="dark">
-                                    1
-                                </a>
-                                <a className="add">
-
-                                </a>
+                                <div className="add">
+                                    <div className="bundle">+</div>
+                                    <p>Create Bundle</p>
+                                </div>
                             </div>
                             <p className="wallets">Connected Wallets</p>
                             <div className="wallets_list">
-                              <a className="item">
-                                 <div className="left">
-                                     <div className="image">
-                                         <canvas width="30" height="30"></canvas>
-                                         <div className="address">ehter</div>
+                                <a className="item">
+                                    <div className="left">
+                                        <div className="image">
+                                            <canvas width="30" height="30"></canvas>
+                                        </div>
+                                        <div className="address">ehter</div>
 
-                                     </div>
-
-                                 </div>
-                              </a>
+                                    </div>
+                                </a>
                             </div>
                             <p className="wallets_title">
                                 Watched Wallets
                             </p>
-                            <form>
-                              <div className="select">
-                                  <FaSearch />
-                                  <div className="holder">
-                                      Add ENS domain, valid ETH or BTC address
-                                  </div>
-                              </div>
+                            <form className='form'>
+                                <div className="select">
+                                    <FaSearch className="icon" />
+                                    <div className="holder">
+                                        Add ENS domain, valid ETH or BTC address
+                                    </div>
+                                </div>
                                 <div className="button">
                                     <button>Add</button>
                                 </div>
                             </form>
                             <div className="empty-state">
                                 <div className="icon">
-                                   <BiBookHeart size={56} />
+                                    <BiBookHeart size={56} />
                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                          viewBox="0 0 512 512" className="close-icon" height="1em" width="1em"
                                          xmlns="http://www.w3.org/2000/svg">

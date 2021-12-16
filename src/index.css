@@ -1,41 +1,29 @@
+#next, .wrapper, wrapper > *, body, html {
+  height: 100%
+
+}
+
 html {
-  height:100%;
-  color:#222;
   font-size:100%;
   -webkit-text-size-adjust: 100%;
 }
-
 * {
   margin:0;
   padding:0;
   border:0;
-  vertical-align: baseline;
-  color:#fff;
-}
-
-
-
-/* Dashboar 기본 background 설정 */
-body {
-  background: #141a1e;
-  margin:0;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.3975;
-}
-
-
-
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
   font:inherit;
   vertical-align: middle;
+  text-decoration: none;
+}
+
+body {
+  background:#141a1e;
+  color:#fff;
+  margin:0;
+  font-family: Avenir Next, Arial sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3975;
+  display:block;
+  overflow-y: hidden;
+
 }
