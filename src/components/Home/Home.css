@@ -15,3 +15,222 @@
         visibility: hidden;
     }
 }}
+
+
+.ExChange {
+    border-right: 1px solid #000;
+   display:flex;
+   flex-direction: column;
+   flex: 1 1;
+}
+.ExChange > .Body {
+  width:100%;
+  padding-bottom: 32px;
+  flex: 1 1;
+}
+.ExChange > .Body > .Border {
+ display:flex;
+ flex-direction: column;
+}
+
+.ExChange > .Body > .Border > .Container {
+} 
+
+.ExChange > .Body > .Border > .Container > .title {
+       padding-bottom: 32px;
+}
+
+.ExChange > .Body > .Border > .Container  > .title > .grid  {
+     display:flex;
+     flex-direction: column;
+}
+
+.ExChange > .Body > .Border > .Container  > .title > .grid > .text {
+    padding-bottom: 32px;
+    max-width:1200px;
+    padding-left:32px;
+    padding-right:32px;
+    padding-top:32px;
+    margin:0 auto;
+    width:100%;
+}
+
+.ExChange > .Body > .Border > .Container  > .title > .grid > .text > span {
+      font-size:24px;
+      font-weight: 500;
+}
+.ExChange > .Body > .Border > .Container  > .title > .grid > .text > .top {
+     margin-bottom: 12px;
+     font-size:16px;
+     color:#fff;    
+}
+.ExChange > .Body > .Border > .Container  > .title > .grid > .text > a {
+    text-decoration: underline;
+
+}
+.ExChange > .Body > .Border > .Container > .Ether {
+    display:block;
+    max-width:1200px;
+    padding:0px 32px;
+    box-sizing: border-box;
+    width:100%;
+     border-bottom:1px solid #fff;
+     margin:0 auto;
+}
+.ExChange > .Body > .Border > .Container > .Ether  > .form {
+     display:flex;
+     padding-top:-25px;
+
+}
+
+.ExChange > .Body > .Border > .Container > .Ether  > .form > .item {
+     padding-left: 16px;
+     padding-right: 16px;
+     padding-bottom: 16px;
+     display:flex;
+     align-items: center;
+
+}
+.ExChange > .Body > .Border > .Container > .Ether  > .form > .item > img {
+    width:24px;
+    height: 24px;
+    box-shadow: 0 0 0 2px #000;
+    border-radius:100%;
+    margin-right: 12px;
+}
+.ExChange > .Body > .Border > .Container > .Ether  > .form > .item > h1 {
+    font-size: 16px;
+}
+
+.ExChange > .Body > .Border > .Container > .exchange {
+     width:100%;
+     max-width:1300px;
+     padding: 0px 32px;
+     margin: 0 auto;
+}
+.ExChange > .Body > .Border > .Container > .exchange > .center {
+    padding-bottom: 32px;
+    padding-top: 32px;
+
+}
+.ExChange > .Body > .Border > .Container > .exchange > .center  > .box {
+    box-shadow: 0 2px 8px rgba(245,251,255,1);
+    margin:auto;
+    border-raidus: 8px;
+    max-width:475px;
+
+}
+.ExChange > .Body > .Border > .Container > .exchange > .center  > .box > .form {
+}
+.ExChange > .Body > .Border > .Container > .exchange > .center  > .box > .form  > .section {
+    border-bottom:1px solid #2c3a43;
+    padding:16px;
+}
+
+.Pool {
+  border-right: 1px solid #2c3a43;
+  display:flex;
+  flex-direction: column;
+
+}
+.Pool > .Body {
+   width:100%;
+   padding-bottom: 32px;
+   flex: 1 1;
+   border-right:1px solid #2c3a43;
+   flex-direction: column;
+}
+.Pool > .Body > .Wrapper {
+    width:100%;
+    padding-bottom: 32px;
+    flex: 1 1;
+    display:flex;
+    flex-direction: column;
+
+}
+.Pool > .Body > .Wrapper > .top {
+    padding-bottom: 32px;
+    display:flex;
+    max-width:1200px;
+    box-sizing:border-box;
+    padding-left:32px;
+    padding-right: 32px;
+
+}
+.Pool > .Body > .Wrapper >  .form {
+    max-width:1200px;
+    padding: 0px 32px;
+    width:100%;
+    margin:0 auto;
+    display:flex;
+}
+.Pool > .Body > .Wrapper >  .form > .container {
+    display:flex;
+    flex-direction: column;
+    flex: 1 1;
+    margin-bottom: 32px;
+}
+.Pool > .Body > .Wrapper >  .form > .container > .row {
+    display:block;
+    align-items: center;
+}
+.Pool > .Body > .Wrapper >  .form > .container > .row > h4 {
+    display:flex;
+    margin-bottom: 16px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Pool > .Body > .Wrapper >  .form > .container > .row > .table {
+     width:100%;
+     
+}
+.Pool > .Body > .Wrapper >  .form > .container >  .row > .table  > .options {
+    display:flex;
+    margin-bottom: 16px;
+}
+.Pool > .Body > .Wrapper >  .form > .container >  .row > .table  > .options > .filter {
+    display:flex;
+    position:relative;
+    flex: 1 1;
+}
+.Pool > .Body > .Wrapper >  .form > .container >  .row > .table  > .options > .filter > .box {
+    position:relative;
+    max-width:400px;
+    flex: 1 1;
+    background:#2c3a43;
+    height:40px;
+    cursor:text;
+    border-radius:8px;
+}
+.Pool > .Body > .Wrapper >  .form > .container >  .row > .table  > .options > .filter > .box  > .flex {
+   display:flex;
+   align-items: center;
+
+}
+.Pool > .Body > .Wrapper >  .form > .container >  .row > .table  > .options > .filter > .box  > .flex >  .right > h1 {
+    white-space: nowrap;
+    margin-left: 2px;
+    margin-right: 2px;
+    position:absolute;
+    transform: translateY(-50%);
+    box-sizing:border-box;
+    font-size: 16px;
+    padding: 2px 8px;
+}
+.Pool > .Body > .Wrapper >  .form > .container >  .row > .table  > .options > .right {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+@media only screen and (min-width: 1480px) {
+    .Pool {
+        width:calc(1480px - 240px - 350px);
+    }
+}
+
+@media only screen and (min-width:1480px) {
+    .ExChange {
+        width: calc(1480px - 240px - 350px);
+    }
+}

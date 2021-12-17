@@ -15,7 +15,6 @@ const Widgets = () => {
 
     return (
         <div className="Widgets">
-            {SideList.map((item) => (
                 <div className="Container">
                     <div className="Body">
                         <div className="Bottom">
@@ -50,8 +49,7 @@ const Widgets = () => {
                                 <div className="Token">
                                     <div className="List">
                                         <div className="Title">
-                                            <h4>{item.Token}</h4>
-                                                    <h4>{item.Token}</h4>
+                                        
 
                                         </div>
                                         <div className="whiteList">
@@ -365,10 +363,9 @@ const Widgets = () => {
                         </div>
                     </div>
                 </div>
-
-            ))}
-
-
+               </div>
+           </div>
+        </div>
         </div>
 
     )

@@ -9,7 +9,7 @@ import Quests from "./components/Home/Quests";
  import SideList from "./components/item.json";
 import Pool from "./components/Home/Pool";
 import Save from './components/Home/Save';
-
+import Widgets from './components/Home/Widgets';
 
 
 function App (props) {
@@ -18,7 +18,6 @@ function App (props) {
     return (
         <>
             {/* 메인 페이지 Open */}
-            <div id="next">
                 {/* Home-container    */}
                 <div className="Home-container">
                     {/* side menu navigation */}
@@ -52,8 +51,9 @@ function App (props) {
                                                         </div>
                                                     </div>
                                                     <div className="xp">
-                                                        <div className="bar">
-                                                        </div>
+                                                        <span>
+                                                            
+                                                        </span>
                                                     </div>
                                                     <div className="gaming">
                                                         <span>LV.1</span>
@@ -150,8 +150,6 @@ function App (props) {
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                     <div className="form">
                                         <div className="language">
@@ -164,13 +162,12 @@ function App (props) {
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                         <div className="toggle">
                                             <div className="style">
                                                 <div className="bg">
-                                                    <div className="night">
-                                                        <div className="icon">
+                                                    <div className="icon">
+                                                        <div className="switch">
                                                             <img src="https://zapper.fi/images/other/moon.svg" alt="moon"/>
                                                         </div>
 
@@ -182,6 +179,7 @@ function App (props) {
                                                     </div>
                                                 </div>
                                                 <div className="bundle"></div>
+                                                <input type="checkbox" role="switch" aria-checked="true"/>
                                             </div>
                                         </div>
                                     </div>
@@ -234,15 +232,14 @@ function App (props) {
                             <Route exact path="/exchange" element={<ExChange/>} />
                             <Route exact path="/nft" element={<DashBoard/>}/>
                             <Route exact path="/Ges" element={<DashBoard/>} />
-                            <Route exact path="/pool" element={<Pool/>} />
-                            <Route exact path="/save" element={<Save />}/>
-                            <Route exact path="/quests" element={<Quests/>}/>
-                            <Route exact path="/quests" element={<Quests/>}/>
+                            <Route exact path="/pool" element={<ExChange/>} />
+                            <Route exact path="/save" element={<ExChange />}/>
+                            <Route exact path="/quests" element={<ExChange/>}/>
+                            <Route exact path="/address" element={<ExChange/>}/>
                         </Routes>
                     </div>
-
+                    <Widgets />
                 </div>
-            </div>
         </>
     );
 }
