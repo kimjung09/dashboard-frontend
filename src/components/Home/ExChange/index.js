@@ -4,7 +4,7 @@ import SideList from "../../item.json";
 import "../Home.css"
 import {AiOutlineHome, AiOutlineSearch, AiOutlineArrowLeft, AiOutlineArrowRight, AiFillCaretDown} from 'react-icons/ai'
 import {FaExchangeAlt, FaTwitter} from 'react-icons/fa'
-
+import "../../../App.css"
 import {BiBookHeart, BiMenu} from 'react-icons/bi'
 import Footer from "../Footer/Footer";
 
