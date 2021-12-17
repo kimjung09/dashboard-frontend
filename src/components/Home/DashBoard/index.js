@@ -1,27 +1,12 @@
 
-import React, {useState} from "react";
+import React from "react";
 import SideList from "../../item.json";
-import { NavLink} from "react-router-dom";
 
-import {AiOutlineHome,AiOutlineSearch,AiOutlineArrowLeft,AiOutlineArrowRight,AiFillCaretDown } from 'react-icons/ai'
 import "../Home.css"
 import Footer from "../Footer/Footer";
 
 
 const DashBoard = (match) => {
-
-    // 클릭시 active Style 적용
-    const activeStyle = {
-        color: '#fffff',
-        fontSize: '2rem',
-        fontWeight:"bold"
-    }
-    // More 버튼 상세메뉴 open
-    const [openMenu, setOpenMenu] = useState(false);
-
-
-
-
     return (
         <>
             <div className="Dashboard">

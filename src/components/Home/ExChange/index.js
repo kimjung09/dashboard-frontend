@@ -1,12 +1,7 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
-import SideList from "../../item.json";
 import "../Home.css"
 import "../../../App.css"
-import {AiOutlineHome, AiOutlineSearch, AiOutlineArrowLeft, AiOutlineArrowRight, AiFillCaretDown} from 'react-icons/ai'
-import {FaExchangeAlt, FaTwitter} from 'react-icons/fa'
 import "../../../App.css"
-import {BiBookHeart, BiMenu} from 'react-icons/bi'
 import Footer from "../Footer/Footer";
 
 const ExChange = () => {
@@ -33,23 +28,23 @@ const ExChange = () => {
                                 <div className="Ether">
                                    <div className="form">
                                         <div className="item">
-                                            <img src="https://zapper.fi/images/networks/ethereum-icon.png"/>
+                                            <img src="https://zapper.fi/images/networks/ethereum-icon.png" alt="enter"/>
                                             <h1>Ethereum</h1>
                                         </div>
                                         <div className="item">
-                                            <img src="https://zapper.fi/images/networks/avalanche-icon.png" />
+                                            <img src="https://zapper.fi/images/networks/avalanche-icon.png" alt="ether" />
                                             <h1>Avalanche</h1>
                                         </div>
                                         <div className="item">
-                                            <img src="https://zapper.fi/images/networks/binance-smart-chain-icon.png" />
+                                            <img src="https://zapper.fi/images/networks/binance-smart-chain-icon.png" alt="ether" />
                                             <h1>BSC</h1>
                                         </div>
                                         <div className="item">
-                                            <img src="https://zapper.fi/images/networks/fantom-icon.png" />
+                                            <img src="https://zapper.fi/images/networks/fantom-icon.png" alt="ether" />
                                             <h1>Fantom</h1>
                                         </div>
                                         <div className="item">
-                                            <img src="https://zapper.fi/images/networks/polygon-icon.png" />
+                                            <img src="https://zapper.fi/images/networks/polygon-icon.png" alt="ether" />
                                             <h1>Polygon</h1>
                                         </div>
                                         
@@ -68,7 +63,7 @@ const ExChange = () => {
                                                             </div>
                                                             <div className="buy">
                                                                 <div className="token">
-                                                                    <img src="https://zapper.fi/images/other/default-icon.png"/>
+                                                                    <img src="https://zapper.fi/images/other/default-icon.png" alt="default"/>
                                                                     <div className="form">
                                                                         <h1>ETH</h1>
                                                                         <div className="flex">

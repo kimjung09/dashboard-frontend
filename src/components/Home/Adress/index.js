@@ -1,22 +1,13 @@
 import React from "react";
-import "../Home.css"
-import { NavLink} from "react-router-dom";
-import {AiOutlineHome,AiOutlineSearch,AiOutlineArrowLeft,AiOutlineArrowRight,AiFillCaretDown } from 'react-icons/ai'
-import {FaExchangeAlt,FaSearch} from 'react-icons/fa'
+import "../Adress/Address.css"
+import {FaSearch} from 'react-icons/fa'
 import {BiBookHeart} from 'react-icons/bi'
-import {RiWaterFlashLine} from 'react-icons/ri'
-import {MdOutlineSwapHoriz} from 'react-icons/md'
-import {FiMoreHorizontal,FiSettings} from 'react-icons/fi';
-import {BsCoin} from 'react-icons/bs'
+
 import SideList from "../../item.json";
 import Footer from "../Footer/Footer";
-import SideBar from "../SideBar";
 
 const Address = () => {
-    const activeStyle = {
-        color: 'green',
-        fontSize: '2rem'
-    }
+
     return (
         <div className="Address">
             {SideList.map((item) => (
@@ -40,12 +31,12 @@ const Address = () => {
                                 <a className="item">
                                     <div className="left">
                                         <div className="image">
-                                            <canvas width="30" height="30"></canvas>
+                                            <canvas width="30" height="30" alt="ds"></canvas>
                                         </div>
-                                        <div className="address">ehter</div>
+                                        <div className="address">enter</div>
 
-                                 </div>
-                              </a>
+                                    </div>
+                                </a>
                             </div>
                             <p className="wallets_title">
                                 Watched Wallets

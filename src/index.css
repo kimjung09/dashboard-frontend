@@ -1,23 +1,48 @@
-/* /*  rkrkadka * */
 
-html {
-  font-size:100%;
-}
 
-button, html, input, select, textarea {
-  color:#222;
-}
 * {
-  text-decoration: none;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    border:0;
+    font:inherit;
+    vertical-align: baseline;
+}
 
+html, body {
+    font-size: 100%;
+    height:100%;
+    font-family: Avenir Next, Arial,sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    text-decoration: none;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*    background: #141a1e ;
+*/
+
+*.light-mode {
+    background:#fff;
+    color:#002237;
+    transition: background-color 0.3s ease;
+}
+*.dark-mode {
+    background-color:#141a1e;
+    color:#fff;
 }
 
 body {
-  background:#141a1a;
-  color:#fff;
-  margin:0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.3975;
-  height: 100%;
+
+}
+
+div {
+    display:block;
+}
+
+html.theme--dark:root {
+    --background-color: #141a1e;
 }

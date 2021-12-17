@@ -1,5 +1,6 @@
+// eslint-disable-next-line
 import React from "react";
-import {FaExchangeAlt, FaTwitter} from 'react-icons/fa'
+import {FaTwitter} from 'react-icons/fa'
 import "../Home.css"
 import SideList from "../../item.json";
 

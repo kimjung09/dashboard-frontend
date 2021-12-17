@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import SideList from "../../item.json";
 import "../Home.css"
-import {BrowserRouter as Router,Route,Routes,NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
-import {AiOutlineHome, AiOutlineSearch, AiOutlineArrowLeft, AiOutlineArrowRight, AiFillCaretDown} from 'react-icons/ai'
-import {FaExchangeAlt, FaTwitter} from 'react-icons/fa'
+import {AiOutlineHome, } from 'react-icons/ai'
+import {FaExchangeAlt} from 'react-icons/fa'
 import {RiWaterFlashLine} from 'react-icons/ri'
-import {BiBookHeart, BiMenu} from 'react-icons/bi'
+import {BiBookHeart} from 'react-icons/bi'
 import {FiMoreHorizontal, FiSettings} from 'react-icons/fi'
 import {GiFarmTractor} from 'react-icons/gi'
 
@@ -29,7 +29,7 @@ const SideBar = () => {
       <>
            <div className="Home-container">
              {SideList.map((item) => (
-                 <nav className="SideBar">
+                 <nav className="sideBar">
                      <div className="hidden">
                          {/* Brand Name*/}
                          <div className="Brand">

@@ -9,7 +9,7 @@ import {FiMoreHorizontal, FiSettings} from 'react-icons/fi'
 
 import SideList from "../item.json";
 import ComSant from "./ComSant";
-import ExChange from "../Side/Side";
+import ExChange from "../Side";
 
 
 const MainPage = () => {
