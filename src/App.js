@@ -1,8 +1,7 @@
 import React from "react";
 import {Routes, Route,NavLink} from "react-router-dom";
 import './App.css';
-import "./components/Home/Widgets/widget.css"
-import "./components/Home/Home.css";
+
 import DashBoard from "./components/Home/DashBoard";
 import ExChange from "./components/Home/ExChange";
  import SideList from "./components/item.json";
