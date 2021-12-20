@@ -1,15 +1,15 @@
 
-.Home-container > .Center > .Dashboard {
+.Home-container > .Center > .ExChange {
     display:flex;
     flex-direction: column;
     flex: 1 1;
 }
-.Home-container > .Center > .Dashboard  > .account {
+.Home-container > .Center > .ExChange  > .account {
     width:100%;
     padding-bottom: 32px;
     flex: 1 1;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Title {
+.Home-container > .Center > .ExChange  > .account  > .Title {
     border-bottom: 1px solid #2c3a43;
     max-width:1200px;
     padding: 0px 32px;
@@ -27,7 +27,7 @@
     overflow:hidden;
     flex: 1 1;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body {
+.Home-container > .Center > .ExChange  > .account  > .Body {
     border-bottom:1px solid #2c3a43;
     padding-top:32px;
     line-height: 1.35;
@@ -36,25 +36,25 @@
     width:100%;
     margin:0 auto;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body > .top {
+.Home-container > .Center > .ExChange  > .account  > .Body > .top {
     display:flex;
     margin-bottom: 32px;
     justify-content: space-between;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body > .top > .bundle {
+.Home-container > .Center > .ExChange  > .account  > .Body > .top > .bundle {
     border:1px solid #2c3a43;
     display:flex;
     border-radius:8px;
     height:36px;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body > .top > .bundle > .item {
+.Home-container > .Center > .ExChange  > .account  > .Body > .top > .bundle > .item {
     background: #202a30;
     border-radius: 8px 0 0 8px;
     display:flex;
     align-items: center;
     cursor: pointer;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body > .top > .bundle > .item  > .pic {
+.Home-container > .Center > .ExChange  > .account  > .Body > .top > .bundle > .item  > .pic {
     display:flex;
     align-items: center;
     margin-left: 12px;
@@ -68,12 +68,12 @@
     background-position: 50%;
 
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body > .top > .bundle > .item  >  p {
+.Home-container > .Center > .ExChange  > .account  > .Body > .top > .bundle > .item  >  p {
     padding: 8px 12px;
     font-size: 14px;
     font-weight: 500;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body > .top > .bundle > .plus {
+.Home-container > .Center > .ExChange  > .account  > .Body > .top > .bundle > .plus {
     position:relative;
     cursor:default;
     margin-right: 0;
@@ -86,16 +86,16 @@
     cursor:pointer;
     height: 36px;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body > .top > .bundle > .plus > .flex {
+.Home-container > .Center > .ExChange  > .account  > .Body > .top > .bundle > .plus > .flex {
     display:flex;
     align-items: center;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body > .top > .bundle > .plus > .flex  > p {
+.Home-container > .Center > .ExChange  > .account  > .Body > .top > .bundle > .plus > .flex  > p {
     padding: 8px 12px;
     font-size: 14px;
     font-weight: 500;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body > .top > .bundle > .plus > .flex  > button  {
+.Home-container > .Center > .ExChange  > .account  > .Body > .top > .bundle > .plus > .flex  > button  {
     color:#fff;
     background: #141a1e;
     border:1px solid #2c3a43;
@@ -109,29 +109,29 @@
     justify-content: center;
     transition:.3s;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body >  .center {
+.Home-container > .Center > .ExChange  > .account  > .Body >  .center {
     min-width: auto;
     width: -moz-fit-content;
     border-radius: 8px;
     margin-bottom: 28px;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body >  .center > .title {
+.Home-container > .Center > .ExChange  > .account  > .Body >  .center > .title {
     display:flex;
     align-items: center;
     color:#c7d2da;
     font-size: 14px;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body >  .center > .pay {
+.Home-container > .Center > .ExChange  > .account  > .Body >  .center > .pay {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 8px;
     flex: 1 1;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body >  .center > .edit {
+.Home-container > .Center > .ExChange  > .account  > .Body >  .center > .edit {
     display:flex;
     align-items: center;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body >  .center > .edit > .box {
+.Home-container > .Center > .ExChange  > .account  > .Body >  .center > .edit > .box {
     margin-right: 8px;
     transition:.3s;
     cursor:pointer;
@@ -146,10 +146,10 @@
     margin-bottom: 26px;
 
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body >  .tabs {
+.Home-container > .Center > .ExChange  > .account  > .Body >  .tabs {
     display:flex;
 }
-.Home-container > .Center > .Dashboard  > .account  > .Body >  .tabs  > button {
+.Home-container > .Center > .ExChange  > .account  > .Body >  .tabs  > button {
     border-bottom:2px solid #fff;
     color:#fff;
     background:none;
@@ -161,7 +161,7 @@
     box-sizing:border-box;
     border-radius: 0;
 }
-.Home-container > .Center > .Dashboard  > .account > .filter {
+.Home-container > .Center > .ExChange  > .account > .filter {
     max-width:100%;
     width:100%;
     padding: 16px 32px;
@@ -175,11 +175,11 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.Home-container > .Center > .Dashboard  > .account > .filter > .left {
+.Home-container > .Center > .ExChange  > .account > .filter > .left {
     display:flex;
     align-items: center;
 }
-.Home-container > .Center > .Dashboard  > .account > .filter > .left  > .menu {
+.Home-container > .Center > .ExChange  > .account > .filter > .left  > .menu {
     visibility: visible;
     display: block;
     background:transparent none repeat scroll 0% 0%;
@@ -190,7 +190,7 @@
     border-radius: 8px;
     margin-right: 8px;
 }
-.Home-container > .Center > .Dashboard  > .account > .filter > .left  > .menu > .item {
+.Home-container > .Center > .ExChange  > .account > .filter > .left  > .menu > .item {
     background:#202a30;
     padding:4px 8px;
     border-radius: 8px;
@@ -198,7 +198,7 @@
     font-weight: 600;
     text-transform: uppercase;
 }
-.Home-container > .Center > .Dashboard  > .account > .filter > .left  > .drop {
+.Home-container > .Center > .ExChange  > .account > .filter > .left  > .drop {
     background:#1a2227;
     border:1px solid #2c3a43;
     height:32px;
@@ -215,13 +215,13 @@
     text-transform: uppercase;
 
 }
-.Home-container > .Center > .Dashboard  > .account > .filter > .right {
+.Home-container > .Center > .ExChange  > .account > .filter > .right {
     display:flex;
     align-items: center;
     justify-content: flex-start;
 
 }
-.Home-container > .Center > .Dashboard  > .account > .filter > .right  > .network {
+.Home-container > .Center > .ExChange  > .account > .filter > .right  > .network {
     visibility: visible;
     border:1px solid #2c3a43;
     border-radius: 8px;
@@ -229,12 +229,12 @@
     align-items: center;
     display:flex;
 }
-.Home-container > .Center > .Dashboard  > .account > .filter > .right  > .network  > h1 {
+.Home-container > .Center > .ExChange  > .account > .filter > .right  > .network  > h1 {
     font-size: 12px;
     font-weight: 600;
     margin-left: 8px;
 
 }
-.Home-container > .Center > .Dashboard  > .account > .filter > .right  > .bundle {
+.Home-container > .Center > .ExChange  > .account > .filter > .right  > .bundle {
 
 }

@@ -10,8 +10,6 @@ const Widgets = () => {
     // token 검색
     return (
         <div className="Widgets">
-                <div className="Container">
-                        <div className="Body">
                             <div className="Box">
                                 {/* 검색 적용 */}
                                 <div className="Search">
@@ -41,7 +39,6 @@ const Widgets = () => {
                                 <div className="Token">
                                         <div className="Title">
                                            <h4>Token Watchlist</h4>
-
                                             <div className="page">
                                                 <button>
                                                     1
@@ -64,7 +61,28 @@ const Widgets = () => {
                                                </div>
                                            </a>
                                             <a href="">
-
+                                                <div className="item">
+                                                    <img />
+                                                    <div className="title">
+                                                        <span className="top">ROBO</span>
+                                                        <span className="bottom">Ethereum</span>
+                                                    </div>
+                                                </div>
+                                                <div className="pay">
+                                                    1
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div className="item">
+                                                    <img />
+                                                    <div className="title">
+                                                        <span className="top">ROBO</span>
+                                                        <span className="bottom">Ethereum</span>
+                                                    </div>
+                                                </div>
+                                                <div className="pay">
+                                                    1
+                                                </div>
                                             </a>
                                         </div>
                                 </div>
@@ -73,7 +91,7 @@ const Widgets = () => {
                                <div className="Network">
                                    <div className="form">
                                       <div className="title">
-                                          <h4>Network Fee</h4>
+                                          <h4>Network vergoding</h4>
                                       </div>
                                        <div className="box">
                                            1
@@ -84,10 +102,8 @@ const Widgets = () => {
                                </div>
                             </div>
                             <div className="Box">
-                                <div className="container">
-                                    <div className="row">
+                                <div className="Learn">
                                         <h4>Zapper Learn - Recent articles</h4>
-                                    </div>
                                     <div className="site">
                                         <div className="form">
                                             <a href="https://learn.zapper.fi/articles/a-primer-on-daos" target="_blank" rel="noreferrer">
@@ -144,27 +160,75 @@ const Widgets = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <div className="Trend">
-                                        <div className="form">
-                                            <div className="nation">
-                                                <h4>
-                                                    🔥 Pool trend by volume (24h)
-                                                </h4>
-                                                <div className="page">
-                                                    <button>
-                                                        <AiOutlineArrowLeft />
-                                                    </button>
-                                                    <div className="number">
-                                                        <span>1/156</span>
-                                                    </div>
-                                                    <button>
-                                                        <AiOutlineArrowRight/>
-                                                    </button>
+
+                                </div>
+                                <div className="Trend">
+                                    <div className="form">
+                                        <div className="nation">
+                                            <h4>
+                                                🔥 Pool trend by volume (24h)
+                                            </h4>
+                                            <div className="page">
+                                                <button>
+                                                    <AiOutlineArrowLeft />
+                                                </button>
+                                                <div className="number">
+                                                    <span>1/156</span>
                                                 </div>
+                                                <button>
+                                                    <AiOutlineArrowRight/>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item">
-                                            <div className="container">
+                                    </div>
+                                    <div className="item">
+                                        <div className="container">
+                                            <div className="row">
+                                                <div className="border">
+                                                    <div className="item">
+                                                        <div className="left">
+                                                            <img
+                                                                src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
+                                                                className="mr-3">
+                                                            </img>
+                                                            <div className="right">
+                                                         <span className="title">
+                                                         UNI-V2 PYR / ETH
+                                                         </span>
+                                                                <span>
+                                                               Uniswap
+                                                           </span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="percent">
+                                                         <span>
+                                                             +2.2%
+                                                         </span>
+                                                            <div className="won">
+                                                                +
+                                                                ₩211,401,716.14
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="border">
+                                                    <div className="item">
+                                                        <div className="left">
+                                                            <img
+                                                                src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
+                                                                className="mr-3">
+                                                            </img>
+                                                            <div className="right">
+                                                                <div className="won">
+                                                                    +
+                                                                    ₩211,401,716.14
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div className="row">
                                                     <div className="border">
                                                         <div className="item">
@@ -191,6 +255,7 @@ const Widgets = () => {
                                                                     ₩211,401,716.14
                                                                 </div>
                                                             </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -203,132 +268,84 @@ const Widgets = () => {
                                                                     className="mr-3">
                                                                 </img>
                                                                 <div className="right">
-                                                                    <div className="won">
-                                                                        +
-                                                                        ₩211,401,716.14
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="row">
-                                                        <div className="border">
-                                                            <div className="item">
-                                                                <div className="left">
-                                                                    <img
-                                                                        src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
-                                                                        className="mr-3">
-                                                                    </img>
-                                                                    <div className="right">
                                                          <span className="title">
                                                          UNI-V2 PYR / ETH
                                                          </span>
-                                                                        <span>
+                                                                    <span>
                                                                Uniswap
                                                            </span>
-                                                                    </div>
                                                                 </div>
-                                                                <div className="percent">
+                                                            </div>
+                                                            <div className="percent">
                                                          <span>
                                                              +2.2%
                                                          </span>
-                                                                    <div className="won">
-                                                                        +
-                                                                        ₩211,401,716.14
-                                                                    </div>
+                                                                <div className="won">
+                                                                    +
+                                                                    ₩211,401,716.14
                                                                 </div>
-
                                                             </div>
+
                                                         </div>
                                                     </div>
-                                                    <div className="row">
-                                                        <div className="border">
-                                                            <div className="item">
-                                                                <div className="left">
-                                                                    <img
-                                                                        src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
-                                                                        className="mr-3">
-                                                                    </img>
-                                                                    <div className="right">
+                                                </div>
+                                                <div className="row">
+                                                    <div className="border">
+                                                        <div className="item">
+                                                            <div className="left">
+                                                                <img
+                                                                    src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
+                                                                    className="mr-3">
+                                                                </img>
+                                                                <div className="right">
                                                          <span className="title">
                                                          UNI-V2 PYR / ETH
                                                          </span>
-                                                                        <span>
+                                                                    <span>
                                                                Uniswap
                                                            </span>
-                                                                    </div>
                                                                 </div>
-                                                                <div className="percent">
+                                                            </div>
+                                                            <div className="percent">
                                                          <span>
                                                              +2.2%
                                                          </span>
-                                                                    <div className="won">
-                                                                        +
-                                                                        ₩211,401,716.14
-                                                                    </div>
+                                                                <div className="won">
+                                                                    +
+                                                                    ₩211,401,716.14
                                                                 </div>
-
                                                             </div>
+
                                                         </div>
                                                     </div>
-                                                    <div className="row">
-                                                        <div className="border">
-                                                            <div className="item">
-                                                                <div className="left">
-                                                                    <img
-                                                                        src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
-                                                                        className="mr-3">
-                                                                    </img>
-                                                                    <div className="right">
+                                                </div>
+                                                <div className="row">
+                                                    <div className="border">
+                                                        <div className="item">
+                                                            <div className="left">
+                                                                <img
+                                                                    src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
+                                                                    className="mr-3">
+                                                                </img>
+                                                                <div className="right">
                                                          <span className="title">
                                                          UNI-V2 PYR / ETH
                                                          </span>
-                                                                        <span>
+                                                                    <span>
                                                                Uniswap
                                                            </span>
-                                                                    </div>
                                                                 </div>
-                                                                <div className="percent">
+                                                            </div>
+                                                            <div className="percent">
                                                          <span>
                                                              +2.2%
                                                          </span>
-                                                                    <div className="won">
-                                                                        +
-                                                                        ₩211,401,716.14
-                                                                    </div>
+                                                                <div className="won">
+                                                                    +
+                                                                    ₩211,401,716.14
                                                                 </div>
-
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="row">
-                                                        <div className="border">
-                                                            <div className="item">
-                                                                <div className="left">
-                                                                    <img
-                                                                        src="https://storage.googleapis.com/zapper-fi-assets/apps/sushiswap.png"
-                                                                        className="mr-3">
-                                                                    </img>
-                                                                    <div className="right">
-                                                         <span className="title">
-                                                         UNI-V2 PYR / ETH
-                                                         </span>
-                                                                        <span>
-                                                               Uniswap
-                                                           </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="percent">
-                                                         <span>
-                                                             +2.2%
-                                                         </span>
-                                                                    <div className="won">
-                                                                        +
-                                                                        ₩211,401,716.14
-                                                                    </div>
-                                                                </div>
 
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -337,49 +354,6 @@ const Widgets = () => {
                                     </div>
                                 </div>
                             </div>
-                                <div className="Box">
-                                    <div className="form">
-                                    <div className="group">
-                                        <div className="title">
-                                            <h4>Network Fee &nbsp;</h4>
-                                        </div>
-                                        <div className="fee">
-                                            <div className="container">
-                                                <div className="flex">
-                                                    <span className="title">Standard</span>
-                                                    <span className="min">~3min</span>
-                                                </div>
-                                                <div className="flex">
-                                                    <span className="title">112</span>
-                                                    <div className="description">
-                                                        ₩32,545.14
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div className="container">
-                                                <div className="flex">
-                                                    <span className="title">Standard</span>
-                                                    <span className="min">~3min</span>
-                                                </div>
-                                                <div className="flex">
-                                                    <span className="title">112</span>
-                                                    <div className="description">
-                                                        ₩32,545.14
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="trend">
-                                        <h4>Gas Trend (1w)</h4>
-                                    </div>
-
-                                </div>
-                                </div>
-                        </div>
-                  </div>
         </div>
 
     )

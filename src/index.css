@@ -11,20 +11,20 @@ html, body {
     border:0;
     font:inherit;
     vertical-align: baseline;
-
     height:100%;
     color:#222;
     font-size: 100%;;    
     line-height: 1.3975;
-    height: 100%;
-    overflow-x:hidden;
+
+    overflow: hidden;
 }
 
 
 
 *.light-mode {
-    background:#fff;
-    color:#002237;
+    background:#141a1e;
+    color:#fff;
+
     transition: background-color 0.3s ease;
 }
 *.dark-mode {

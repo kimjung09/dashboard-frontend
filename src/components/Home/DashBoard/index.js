@@ -2,8 +2,7 @@
 import React from "react";
 import SideList from "../../item.json";
 
-import "../Home.css"
-import Footer from "../Footer/Footer";
+import "./Dash.css"
 
 
 const DashBoard = (match) => {
@@ -81,7 +80,6 @@ const DashBoard = (match) => {
                                 </div>
                             </div>
                         </div>
-                        <Footer />
 
                     </div>
 

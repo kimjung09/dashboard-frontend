@@ -34,7 +34,7 @@
 }
 
 .ExChange > .Body > .Border > .Container {
-} 
+}
 
 .ExChange > .Body > .Border > .Container > .title {
        padding-bottom: 32px;
@@ -62,7 +62,7 @@
 .ExChange > .Body > .Border > .Container  > .title > .grid > .text > .top {
      margin-bottom: 12px;
      font-size:16px;
-     color:#fff;    
+     color:#fff;
 }
 .ExChange > .Body > .Border > .Container  > .title > .grid > .text > a {
     text-decoration: underline;
@@ -183,7 +183,7 @@
 }
 .Pool > .Body > .Wrapper >  .form > .container > .row > .table {
      width:100%;
-     
+
 }
 .Pool > .Body > .Wrapper >  .form > .container >  .row > .table  > .options {
     display:flex;

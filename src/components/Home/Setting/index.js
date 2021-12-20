@@ -178,4 +178,4 @@ const Setting = ({match}) => {
   )
 }
 
-export default Setting
+export default Setting;w

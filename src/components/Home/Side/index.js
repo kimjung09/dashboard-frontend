@@ -1,6 +1,6 @@
-import React,{ ChangeEventHandler } from "react";
-import "../../App.css"
-import SideList from "../item.json";
+import React from "react";
+import "./SideBar.css";
+import SideList from "../../item.json";
 import {NavLink} from "react-router-dom";
 import useDarkMode from 'use-dark-mode';
 
@@ -16,35 +16,35 @@ const SideBar = () => {
                     <div className="hidden">
                         {/* Brand Name*/}
                         <NavLink to="/" className="brand">
-                            <img src="https://zapper.fi/images/other/christmas-hat.png" className="hat"/>
+                            {/*<img src="https://zapper.fi/images/other/christmas-hat.png" className="hat"/>*/}
                             <img src={process.env.PUBLIC_URL + 'favicon.ico'} />
                             <span>Zapper</span>
                         </NavLink>
                         {/* Account_conneted 연결 */}
                         <div className="connected">
                             <div className="account">
-                             <div className="header">
-                                        <div className="blockie">
-                                            <div className="edit">
-                                                <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 24 24" height="1.2rem" width="1.2rem" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M7.243 18H3v-4.243L14.435 2.322a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414L7.243 18zM3 20h18v2H3v-2z"></path></g></svg>
-                                            </div>
+                                <div className="header">
+                                    <div className="blockie">
+                                        <div className="edit">
+                                            <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 24 24" height="1.2rem" width="1.2rem" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M7.243 18H3v-4.243L14.435 2.322a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414L7.243 18zM3 20h18v2H3v-2z"></path></g></svg>
+                                        </div>
+                                        <span></span>
+                                        <canvas></canvas>
+                                    </div>
+                                    <div className="hide">
+                                        <div className="flex">
+                                            <span>0x7ce1...6412</span>
+                                            <img src={process.env.PUBLIC_URL + 'images/down.svg'} />
+                                        </div>
+                                        <div className="xp">
                                             <span></span>
-                                            <canvas></canvas>
                                         </div>
-                                        <div className="hide">
-                                            <div className="flex">
-                                                <span>0x7ce1...6412</span>
-                                                <img src={process.env.PUBLIC_URL + 'images/down.svg'} />
-                                            </div>
-                                            <div className="xp">
-                                                <span></span>
-                                            </div>
-                                            <div className="gaming">
-                                                <span>LV.1</span>
-                                                <span>0/500</span>
-                                            </div>
+                                        <div className="gaming">
+                                            <span>LV.1</span>
+                                            <span>0/500</span>
                                         </div>
-                             </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="gamification">
                                 <NavLink to="/quests" className="visible">
@@ -65,7 +65,7 @@ const SideBar = () => {
                                 <NavLink className="menu--active" to="/">
                                     <div className="icon">
                                         <div className="flex">
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="icon " height="1.25em" width="1.25em" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="icon " height="1.25em" width="1.25em" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
                                         </div>
                                     </div>
                                     <span>Dashboard</span>
@@ -102,7 +102,7 @@ const SideBar = () => {
                                     </div>
                                     <span>Address Book</span>
                                 </NavLink>
-                                <div className="more">
+                                <div className="menu--active">
                                     <div className="icon">
                                         <div className="flex">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="256" cy="256" r="48"></circle><circle cx="416" cy="256" r="48"></circle><circle cx="96" cy="256" r="48"></circle></svg>
@@ -122,46 +122,46 @@ const SideBar = () => {
                                 <span>Settings</span>
                             </NavLink>
                             <div className="network">
-                                        <img src="https://zapper.fi/images/networks/ethereum-icon.png" alt="icon" />
-                                        <h1>Ethereum</h1>
-                                        <div className="hide">
-                                            <div className="flex">
-                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="icon " height="1.1em" width="1.1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 320l128-128 128 128z"></path></svg>
-                                            </div>
+                                <img src="https://zapper.fi/images/networks/ethereum-icon.png" alt="icon" />
+                                <h1>Ethereum</h1>
+                                <div className="hide">
+                                    <div className="flex">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="icon " height="1.1em" width="1.1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 320l128-128 128 128z"></path></svg>
+                                    </div>
                                 </div>
                             </div>
                             <div className="form">
-                                <div className="language">            
-                                        <img src="https://zapper.fi/images/currencies/USD.svg" alt="icon" />
-                                        <div className="title">
-                                            <span>USD</span>
-                                            <div className="button">
-                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 320l128-128 128 128z"></path></svg>
-                                            </div>
-                                    </div>
-                                </div>
-                                <div className="toggle">
-                                        <div className="bg" onClick={darkMode.toggle}>
-                                            <div className="icon">
-                                                <div className="switch"
-                                                     onClick={darkMode.disable}
-                                                     checked={darkMode.value}
-                                                >
-                                                    <img src="https://zapper.fi/images/other/moon.svg" alt="moon"/>
-                                                </div>
-                                            </div>
-                                            <div className="icon">
-                                                <div className="switch"
-                                                     onChange={darkMode.enable}
-                                                     checked={darkMode.value}
-                                                >
-                                                    <img src="https://zapper.fi/images/other/sun.svg" alt="sun"/>
-                                                </div>
+                                <div className="language">
+                                    <img src="https://zapper.fi/images/currencies/USD.svg" alt="icon" />
+                                    <div className="title">
+                                        <span>USD</span>
+                                        <div className="button">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 320l128-128 128 128z"></path></svg>
                                         </div>
-                                        <div className="bundle"></div>
-                                        <input type="checkbox" role="switch" aria-checked="true"/>
                                     </div>
                                 </div>
+                                {/*<div className="toggle">*/}
+                                {/*        <div className="bg" onClick={darkMode.toggle}>*/}
+                                {/*            <div className="icon">*/}
+                                {/*                <div className="switch"*/}
+                                {/*                     onClick={darkMode.disable}*/}
+                                {/*                     checked={darkMode.value}*/}
+                                {/*                >*/}
+                                {/*                    <img src="https://zapper.fi/images/other/moon.svg" alt="moon"/>*/}
+                                {/*                </div>*/}
+                                {/*            </div>*/}
+                                {/*            <div className="icon">*/}
+                                {/*                <div className="switch"*/}
+                                {/*                     onChange={darkMode.enable}*/}
+                                {/*                     checked={darkMode.value}*/}
+                                {/*                >*/}
+                                {/*                    <img src="https://zapper.fi/images/other/sun.svg" alt="sun"/>*/}
+                                {/*                </div>*/}
+                                {/*        </div>*/}
+                                {/*        <div className="bundle"></div>*/}
+                                {/*        <input type="checkbox" role="switch" aria-checked="true"/>*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
                             </div>
                         </div>
                     </div>

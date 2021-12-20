@@ -1,0 +1,35 @@
+.footer {
+    color:#c7d2da;
+    border-top:1px solid #2c3a43;
+    padding-top:32px;
+    padding-bottom: 32px;
+    display:block;
+    bottom:0;
+    position:fixed;
+    max-width:850px;
+    width:100%;
+}
+.footer > .container {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0 32px;
+    width:100%;
+    box-sizing: border-box;
+    max-width:1200px;
+    flex-grow: 1;
+}
+.footer > .container > a {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    margin-right: 6px;
+    color:#fff;
+}
+@media screen and (min-width: 1200px) {
+    .footer > .container {
+        margin: 0 auto;
+    }
+}
